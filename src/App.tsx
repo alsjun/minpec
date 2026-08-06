@@ -61,7 +61,7 @@ export default function App() {
   return (
     <div className="app">
       <header>
-        <h1>VALOA 레이드 시트</h1>
+        <h1>minpec</h1>
         <span className={state.shared ? 'mode shared' : 'mode local'}>{state.modeLabel}</span>
       </header>
 
