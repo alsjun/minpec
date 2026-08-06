@@ -159,7 +159,7 @@ export default function RosterView({ state }: Props) {
 
     const names = sections.characters.map((c) => c.name)
     const results = new Map<string, { clazz: string; itemLevel: number | null; combatPower: number | null }>()
-    let failed = 0
+    const failedNames: string[] = []
 
     for (let i = 0; i < names.length; i++) {
       setProgress(`조회 중... ${i + 1}/${names.length} (${names[i]})`)
@@ -176,9 +176,9 @@ export default function RosterView({ state }: Props) {
           return
         }
         if (profile) results.set(names[i], profile)
-        else failed++
+        else failedNames.push(names[i])
       } catch {
-        failed++
+        failedNames.push(names[i])
       }
       // 로아 API는 분당 100회 제한이 있어 사이사이 짧게 쉽니다.
       await sleep(150)
@@ -199,7 +199,12 @@ export default function RosterView({ state }: Props) {
       }),
     )
     setProgress(null)
-    alert(`조회 완료: ${results.size}명 갱신${failed > 0 ? `, ${failed}명 실패(개명·삭제 확인 필요)` : ''}`)
+    alert(
+      `조회 완료: ${results.size}명 갱신` +
+        (failedNames.length > 0
+          ? `\n\n실패 ${failedNames.length}명 (개명·삭제 확인 필요):\n${failedNames.join(', ')}`
+          : ''),
+    )
   }
 
   const renderRow = (c: Character) => {
