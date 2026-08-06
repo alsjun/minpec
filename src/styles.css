@@ -1270,6 +1270,115 @@ tbody tr:hover {
   border-color: var(--gold);
 }
 
+/* ---------- 캐릭터 탭 ---------- */
+
+.roster-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  background: var(--ink-1);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  margin-bottom: 14px;
+}
+
+.roster-toolbar input {
+  background: var(--ink-2);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 7px 10px;
+  font-size: 13px;
+  width: 150px;
+}
+
+.roster-toolbar button {
+  background: var(--ink-2);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 7px 12px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.roster-toolbar button:hover:not(:disabled) {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.roster-toolbar button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.roster-toolbar .primary-btn {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #14110a;
+  font-weight: 700;
+}
+
+.roster-toolbar .primary-btn:hover:not(:disabled) {
+  color: #14110a;
+  filter: brightness(1.08);
+}
+
+.toolbar-divider {
+  width: 1px;
+  height: 22px;
+  background: var(--line);
+  margin: 0 4px;
+}
+
+.member-section {
+  margin-bottom: 18px;
+}
+
+.member-section h3 {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 14px 0 8px;
+}
+
+.member-count {
+  font-size: 11.5px;
+  color: var(--muted);
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+.name-btn {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 13.5px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.name-btn:hover {
+  color: var(--gold);
+}
+
+.name-edit {
+  background: var(--ink-2);
+  color: var(--text);
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 13px;
+  width: 140px;
+}
+
+.center {
+  text-align: center;
+}
+
 /* ---------- 골드표 ---------- */
 
 .gold-view section {
