@@ -11,6 +11,7 @@ git 이력에서 원하는 날짜의 상태를 복구할 수 있습니다.
 from __future__ import annotations
 
 import json
+import re
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
