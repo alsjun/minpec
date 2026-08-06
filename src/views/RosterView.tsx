@@ -36,6 +36,8 @@ export default function RosterView({ state }: Props) {
   const [newMember, setNewMember] = useState('')
   const [newName, setNewName] = useState('')
 
+  const sharedKey = sections.settings?.lostarkApiKey?.trim() || null
+
   const lastUpdated = sections.characters
     .map((c) => c.updatedAt)
     .filter(Boolean)
@@ -126,7 +128,7 @@ export default function RosterView({ state }: Props) {
     let clazz = ''
     let itemLevel: number | null = null
     let combatPower: number | null = null
-    const key = getApiKey()
+    const key = sharedKey ?? getApiKey()
     if (key) {
       setProgress(`${name} 조회 중...`)
       const profile = await fetchProfile(name, key).catch(() => null)
@@ -152,7 +154,7 @@ export default function RosterView({ state }: Props) {
 
   /** 전체 캐릭터의 템렙·전투력을 로아 API에서 순서대로 새로 받아옵니다. */
   const refreshAll = async () => {
-    const key = ensureApiKey()
+    const key = sharedKey ?? ensureApiKey()
     if (!key) return
 
     const names = sections.characters.map((c) => c.name)
@@ -165,8 +167,12 @@ export default function RosterView({ state }: Props) {
         const profile = await fetchProfile(names[i], key)
         if (profile === 'invalid-key') {
           setProgress(null)
-          clearApiKey()
-          alert('API 키가 유효하지 않아 중단했습니다. 버튼을 다시 눌러 키를 새로 입력해 주세요.')
+          if (sharedKey) {
+            alert('팀 공유 API 키가 유효하지 않습니다. API 키 변경 버튼으로 새 키를 등록해 주세요.')
+          } else {
+            clearApiKey()
+            alert('API 키가 유효하지 않아 중단했습니다. 버튼을 다시 눌러 키를 새로 입력해 주세요.')
+          }
           return
         }
         if (profile) results.set(names[i], profile)
@@ -277,17 +283,20 @@ export default function RosterView({ state }: Props) {
         <button className="primary-btn" onClick={refreshAll} disabled={progress !== null}>
           {progress ?? '⟳ 전체 조회 (로아 API)'}
         </button>
-        {getApiKey() && (
-          <button
-            onClick={() => {
-              clearApiKey()
-              alert('저장된 API 키를 지웠습니다. 다음 조회 때 다시 입력합니다.')
-            }}
-            title="이 브라우저에 저장된 로아 API 키를 삭제합니다"
-          >
-            API 키 재설정
-          </button>
-        )}
+        <button
+          onClick={() => {
+            const entered = prompt(
+              sharedKey
+                ? '새 로아 API 키를 입력해 주세요. 팀원 모두에게 적용됩니다.'
+                : '팀에서 함께 쓸 로아 API 키를 입력해 주세요. 한 번만 등록하면 됩니다.',
+            )
+            if (!entered?.trim()) return
+            update('settings', (cur) => ({ ...cur, lostarkApiKey: entered.trim() }))
+          }}
+          title="팀원 모두가 같이 쓰는 로아 API 키를 등록합니다"
+        >
+          {sharedKey ? 'API 키 변경' : 'API 키 등록 (팀 공유)'}
+        </button>
         <span className="toolbar-divider" />
         <input
           list="member-options"

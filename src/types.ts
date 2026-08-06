@@ -73,6 +73,11 @@ export type Assignments = Record<string, Party[]>
 /** 본부계/멤버 이름 -> 표시 색상 */
 export type MemberColors = Record<string, string>
 
+/** 팀 공용 설정. 로아 API 키를 여기 두면 팀원 모두가 따로 입력하지 않아도 됩니다. */
+export interface Settings {
+  lostarkApiKey?: string
+}
+
 export interface Sections {
   characters: Character[]
   raids: Raid[]
@@ -82,6 +87,7 @@ export interface Sections {
   /** 실제 작업 중인 편성 보드 */
   assignments: Assignments
   memberColors: MemberColors
+  settings: Settings
 }
 
 export interface GoldRow {

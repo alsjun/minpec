@@ -1,7 +1,7 @@
 // 이 파일은 구글 시트에서 옮겨 온 초기 데이터입니다.
 // Supabase가 비어 있을 때 최초 한 번 자동으로 올라가고, 이후에는 DB 값이 기준이 됩니다.
 // 골드표는 정적 데이터라 여기서 직접 수정하면 됩니다.
-import type { Character, Raid, Checks, Assignments, GoldRow, RaidGoldRow, MemberColors, Sections } from './types'
+import type { Character, Raid, Checks, Assignments, GoldRow, RaidGoldRow, MemberColors, Sections, Settings } from './types'
 
 export const SEED_CHARACTERS: Character[] = [
   {
@@ -1316,6 +1316,8 @@ export const RAID_GOLD: RaidGoldRow[] = [
   }
 ]
 
+export const SEED_SETTINGS: Settings = {}
+
 export const SEED_SECTIONS: Sections = {
   characters: SEED_CHARACTERS,
   raids: SEED_RAIDS,
@@ -1323,6 +1325,7 @@ export const SEED_SECTIONS: Sections = {
   sourceAssignments: SEED_ASSIGNMENTS,
   assignments: SEED_ASSIGNMENTS,
   memberColors: SEED_MEMBER_COLORS,
+  settings: SEED_SETTINGS,
 }
 
 // 레이드 체크 항목별 1캐릭터 클리어 골드(총액 기준). 대시보드 예상 골드 계산에 사용합니다.
