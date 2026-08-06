@@ -75,6 +75,19 @@ export default function DashboardView({ state, onOpenBoard }: Props) {
   })
   const totalGold = memberRows.reduce((a, r) => a + r.gold, 0)
 
+  // 새 주가 시작될 때 모든 팟의 클리어 표시를 한 번에 풉니다.
+  const resetCleared = () => {
+    if (!confirm('모든 팟의 클리어 표시를 해제할까요? 보통 수요일 리셋 후에 누릅니다.')) return
+    update('assignments', (cur) =>
+      Object.fromEntries(
+        Object.entries(cur).map(([raidId, parties]) => [
+          raidId,
+          normalizeParties(parties).map((p) => ({ ...p, cleared: false })),
+        ]),
+      ),
+    )
+  }
+
   // 원본 시트의 팟 구성을 재배치 없이 그대로 편성 보드로 가져옵니다.
   const resetFromSourceSheet = () => {
     if (!confirm('편성 보드를 원본 시트 편성 그대로 덮어쓸까요?')) return
@@ -97,7 +110,7 @@ export default function DashboardView({ state, onOpenBoard }: Props) {
     return (
       <div
         key={pi}
-        className={`pot-col status-${status.kind}`}
+        className={`pot-col status-${status.kind}${party.cleared ? ' cleared' : ''}`}
         onClick={() => onOpenBoard(row.id)}
         role="button"
         title={`${pi + 1}팟 — 누르면 편성 보드로 이동`}
@@ -161,12 +174,18 @@ export default function DashboardView({ state, onOpenBoard }: Props) {
       <div className="dash-section-head">
         <h3>전체 편성표</h3>
         <button onClick={resetFromSourceSheet}>원본 시트 그대로 불러오기</button>
+        <button onClick={resetCleared}>🏁 주간 클리어 초기화</button>
       </div>
       <div className="raid-blocks">
         {raidRows.map((row) => (
           <div key={row.id} className="raid-block">
             <button className="raid-block-title" onClick={() => onOpenBoard(row.id)} title={row.name}>
               {row.id}
+              {row.parties.some((p) => p.cleared) && (
+                <span className="clear-progress">
+                  {row.parties.filter((p) => p.cleared).length}/{row.parties.length}팟 클리어
+                </span>
+              )}
             </button>
             <div className="raid-block-pots">
               {row.parties.length === 0 && <span className="hint">팟 없음</span>}

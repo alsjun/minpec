@@ -62,6 +62,8 @@ export type Checks = Record<string, Record<string, boolean>>
 export interface Party {
   slots: (string | null)[]
   done?: boolean
+  /** 이번 주에 이 팟이 레이드를 이미 돌았으면 true. 수요일 초기화 때 풀립니다. */
+  cleared?: boolean
 }
 
 /**

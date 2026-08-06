@@ -141,6 +141,11 @@ export default function BoardView({ state, raidId, onSelectRaid }: Props) {
     setParties(parties.map((p, i) => (i === idx ? { ...p, done: !p.done } : p)))
   }
 
+  /** 이번 주에 이 팟이 레이드를 돌았는지 표시/해제 */
+  const toggleCleared = (idx: number) => {
+    setParties(parties.map((p, i) => (i === idx ? { ...p, cleared: !p.cleared } : p)))
+  }
+
   const changePartySize = (size: number) => {
     update('raids', (cur) => cur.map((r) => (r.id === raid.id ? { ...r, partySize: size } : r)))
     // 이미 만든 팟의 슬롯 수도 함께 맞춥니다. 줄어드는 경우 잘리는 캐릭터는 편성 해제됩니다.
@@ -289,10 +294,20 @@ export default function BoardView({ state, raidId, onSelectRaid }: Props) {
             SUBPARTY_SIZE,
           )
           return (
-            <div key={pi} className={`party-card status-${status.kind}`}>
+            <div
+              key={pi}
+              className={`party-card status-${status.kind}${party.cleared ? ' cleared' : ''}`}
+            >
               <div className="party-head">
                 <strong>{pi + 1}팟</strong>
                 <span className="party-status">{status.label}</span>
+                <button
+                  className={party.cleared ? 'done-btn cleared-btn active' : 'done-btn cleared-btn'}
+                  onClick={() => toggleCleared(pi)}
+                  title="이번 주에 이 팟이 레이드를 돌았으면 눌러 주세요"
+                >
+                  {party.cleared ? '🏁 클리어됨' : '클리어'}
+                </button>
                 <button
                   className={party.done ? 'done-btn active' : 'done-btn'}
                   onClick={() => toggleDone(pi)}

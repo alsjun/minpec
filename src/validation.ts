@@ -155,6 +155,11 @@ export function partyStatus(
   const supports = chars.filter(isSupportChar).length
   const base = { avg, dealers: chars.length - supports, supports }
 
+  // 이미 돌고 온 팟은 더 검증할 것이 없습니다.
+  if (potParty.cleared) {
+    return { kind: 'ok', label: '🏁 클리어', ...base }
+  }
+
   const memberSet = new Set(chars.map((c) => c.member))
   if (memberSet.size < chars.length) {
     return { kind: 'error', label: '❌ 사람 중복', ...base }

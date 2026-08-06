@@ -1270,6 +1270,30 @@ tbody tr:hover {
   border-color: var(--gold);
 }
 
+/* ---------- 클리어 표시 ---------- */
+
+.party-card.cleared,
+.pot-col.cleared {
+  opacity: 0.5;
+}
+
+.party-card.cleared::before {
+  background: var(--muted);
+}
+
+.cleared-btn.active {
+  color: #10131a;
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.clear-progress {
+  font-size: 11px;
+  color: var(--ok);
+  font-weight: 600;
+  margin-left: 8px;
+}
+
 /* ---------- 레이드 체크 표 ---------- */
 
 /* 표 안에서만 스크롤되게 해서, 헤더는 위에·캐릭터 이름은 왼쪽에 항상 고정합니다. */
