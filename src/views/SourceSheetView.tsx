@@ -249,13 +249,21 @@ export default function SourceSheetView({ state }: Props) {
                               className={char ? 'source-cell known' : name ? 'source-cell unknown' : 'source-cell'}
                               draggable={!!name}
                               onDragStart={(e) => {
-                                if (name) e.dataTransfer.setData('text/plain', name)
+                                if (name) {
+                                  e.dataTransfer.setData('text/plain', name)
+                                  // 다른 레이드로 끌고 가면 복사가 아니라 이동이 되도록 출발지를 기억합니다.
+                                  e.dataTransfer.setData('text/x-src-raid', raid.id)
+                                }
                               }}
                               onDragOver={(e) => e.preventDefault()}
                               onDrop={(e) => {
                                 e.preventDefault()
                                 const dragged = e.dataTransfer.getData('text/plain')
-                                if (dragged) placeOrSwap(raid.id, pi, si, dragged)
+                                if (!dragged) return
+                                const srcRaid = e.dataTransfer.getData('text/x-src-raid')
+                                // 다른 레이드에서 온 캐릭터는 원래 레이드에서 빼서 이동시킵니다.
+                                if (srcRaid && srcRaid !== raid.id) removeCharacter(srcRaid, dragged)
+                                placeOrSwap(raid.id, pi, si, dragged)
                               }}
                               style={color ? { borderLeftColor: color } : undefined}
                             >
