@@ -6,6 +6,7 @@ import {
   arrangeAssignmentsByRules,
   chunk,
   normalizeParties,
+  padPartySlots,
   partyStatus,
 } from '../validation'
 import { RAID_ID_GOLD } from '../seed'
@@ -39,7 +40,9 @@ export default function DashboardView({ state, onOpenBoard }: Props) {
   const raidRows: RaidRow[] = sections.raids
     .filter((r) => r.active)
     .map((raid) => {
-      const parties = normalizeParties(sections.assignments[raid.id])
+      const parties = normalizeParties(sections.assignments[raid.id]).map((p) =>
+        padPartySlots(p, raid.partySize),
+      )
       const statuses = parties.map((p) => partyStatus(p, raid, charByName, sections.checks))
       const assigned = new Set(parties.flatMap((p) => p.slots).filter(Boolean) as string[])
       const checked = sections.characters.filter((c) => sections.checks[c.name]?.[raid.id])
