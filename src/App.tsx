@@ -19,9 +19,21 @@ const TABS: { id: Tab; label: string; undoKey?: SectionKey }[] = [
   { id: 'gold', label: '골드표' },
 ]
 
+const TAB_IDS = ['dash', 'board', 'source', 'checks', 'roster', 'gold'] as const
+
+/** 주소창 해시(#board 등)에서 탭을 읽습니다. 새로고침해도 보던 탭이 유지됩니다. */
+function tabFromHash(): Tab {
+  const h = window.location.hash.replace('#', '')
+  return (TAB_IDS as readonly string[]).includes(h) ? (h as Tab) : 'dash'
+}
+
 export default function App() {
   const state = useAppState()
-  const [tab, setTab] = useState<Tab>('dash')
+  const [tab, setTabState] = useState<Tab>(tabFromHash)
+  const setTab = (t: Tab) => {
+    setTabState(t)
+    window.history.replaceState(null, '', `#${t}`)
+  }
   const [boardRaidId, setBoardRaidId] = useState<string>('')
   const [undoMsg, setUndoMsg] = useState<string | null>(null)
 
