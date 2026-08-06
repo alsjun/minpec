@@ -23,7 +23,8 @@ from update_characters import load_env_file, require_env, supabase_headers  # no
 
 def main() -> None:
     load_env_file()
-    sb_url = require_env("SUPABASE_URL").rstrip("/")
+    # REST 주소(.../rest/v1)를 넣어도 동작하도록 base 주소로 정리합니다.
+    sb_url = re.sub(r"/rest/v1/?$", "", require_env("SUPABASE_URL").strip().rstrip("/"))
     sb_key = require_env("SUPABASE_SERVICE_ROLE_KEY")
 
     resp = requests.get(

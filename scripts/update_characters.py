@@ -202,7 +202,8 @@ def supabase_headers(service_key: str) -> dict:
 def main() -> None:
     load_env_file()
     api_key = require_env("LOSTARK_API_KEY")
-    sb_url = require_env("SUPABASE_URL").rstrip("/")
+    # REST 주소(.../rest/v1)를 넣어도 동작하도록 base 주소로 정리합니다.
+    sb_url = re.sub(r"/rest/v1/?$", "", require_env("SUPABASE_URL").strip().rstrip("/"))
     sb_key = require_env("SUPABASE_SERVICE_ROLE_KEY")
 
     headers = supabase_headers(sb_key)
