@@ -21,7 +21,7 @@ export default function ChecksView({ state }: Props) {
   return (
     <div className="view">
       <p className="hint">캐릭터가 이번 주에 갈 레이드를 체크하면, 편성 보드의 후보 목록에 나타납니다.</p>
-      <div className="table-scroll">
+      <div className="table-scroll checks-scroll">
         <table className="checks-table">
           <thead>
             <tr>

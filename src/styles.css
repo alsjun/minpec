@@ -1270,6 +1270,34 @@ tbody tr:hover {
   border-color: var(--gold);
 }
 
+/* ---------- 레이드 체크 표 ---------- */
+
+/* 표 안에서만 스크롤되게 해서, 헤더는 위에·캐릭터 이름은 왼쪽에 항상 고정합니다. */
+.checks-scroll {
+  max-height: calc(100vh - 230px);
+  overflow: auto;
+}
+
+.checks-scroll thead th {
+  z-index: 2;
+}
+
+.checks-scroll th:first-child,
+.checks-scroll td:first-child {
+  position: sticky;
+  left: 0;
+  background: var(--ink-1);
+}
+
+.checks-scroll thead th:first-child {
+  z-index: 3;
+  background: var(--ink-2);
+}
+
+.checks-scroll tbody tr:hover td:first-child {
+  background: var(--ink-2);
+}
+
 /* ---------- 캐릭터 탭 ---------- */
 
 .roster-toolbar {
