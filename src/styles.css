@@ -1380,6 +1380,16 @@ tbody tr:hover {
   width: 150px;
 }
 
+.roster-toolbar select {
+  background: var(--ink-2);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 7px 10px;
+  font-size: 13px;
+  max-width: 180px;
+}
+
 .roster-toolbar button {
   background: var(--ink-2);
   color: var(--text);

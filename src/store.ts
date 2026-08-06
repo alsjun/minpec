@@ -14,6 +14,7 @@ const SECTION_KEYS: SectionKey[] = [
   'memberColors',
   'settings',
   'presets',
+  'checkPresets',
 ]
 
 interface Adapter {

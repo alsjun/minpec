@@ -87,6 +87,13 @@ export interface Preset {
   assignments: Assignments
 }
 
+/** 레이드 체크 스냅샷. 주차별 체크 상태를 저장해 두고 불러올 때 사용합니다. */
+export interface CheckPreset {
+  name: string
+  savedAt: string
+  checks: Checks
+}
+
 export interface Sections {
   characters: Character[]
   raids: Raid[]
@@ -98,6 +105,7 @@ export interface Sections {
   memberColors: MemberColors
   settings: Settings
   presets: Preset[]
+  checkPresets: CheckPreset[]
 }
 
 export interface GoldRow {
