@@ -75,6 +75,16 @@ export default function DashboardView({ state, onOpenBoard }: Props) {
   })
   const totalGold = memberRows.reduce((a, r) => a + r.gold, 0)
 
+  /** 대시보드에서 바로 팟 클리어를 표시/해제합니다. */
+  const toggleCleared = (raidId: string, pi: number) => {
+    update('assignments', (cur) => ({
+      ...cur,
+      [raidId]: normalizeParties(cur[raidId]).map((p, i) =>
+        i === pi ? { ...p, cleared: !p.cleared } : p,
+      ),
+    }))
+  }
+
   // 새 주가 시작될 때 모든 팟의 클리어 표시를 한 번에 풉니다.
   const resetCleared = () => {
     if (!confirm('모든 팟의 클리어 표시를 해제할까요? 보통 수요일 리셋 후에 누릅니다.')) return
@@ -148,6 +158,16 @@ export default function DashboardView({ state, onOpenBoard }: Props) {
             : '-'}
         </div>
         {party.done && <div className="pot-col-done">인원 확정</div>}
+        <button
+          className={party.cleared ? 'pot-clear-btn active' : 'pot-clear-btn'}
+          onClick={(e) => {
+            e.stopPropagation()
+            toggleCleared(row.id, pi)
+          }}
+          title="이번 주에 이 팟이 레이드를 돌았으면 눌러 주세요"
+        >
+          {party.cleared ? '🏁 클리어됨' : '클리어'}
+        </button>
       </div>
     )
   }
