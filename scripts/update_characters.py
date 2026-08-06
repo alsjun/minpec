@@ -155,9 +155,15 @@ def parse_lopec_html(html: str) -> dict[str, Any] | None:
 
 
 def fetch_lopec(session: requests.Session, name: str) -> dict[str, Any] | None:
+    # 로펙은 외부 사이트라 느리거나 막힐 수 있습니다.
+    # 여기서 실패해도 전투력 갱신은 계속되어야 하므로 예외를 밖으로 던지지 않습니다.
     url = f"{LOPEC_CHARACTER_API}/{urllib.parse.quote(name)}"
     for attempt in range(2):
-        resp = session.get(url, headers=LOPEC_HEADERS, timeout=20)
+        try:
+            resp = session.get(url, headers=LOPEC_HEADERS, timeout=20)
+        except requests.RequestException as e:
+            print(f"  [로펙 실패] {name}: {type(e).__name__}")
+            return None
         if resp.status_code == 429 and attempt == 0:
             print(f"  [로펙 대기] {name}: 요청 제한으로 잠시 뒤 재시도")
             time.sleep(8)
@@ -175,11 +181,16 @@ def fetch_lopec(session: requests.Session, name: str) -> dict[str, Any] | None:
 
 def fetch_profile(session: requests.Session, api_key: str, name: str) -> dict | None:
     url = f"{LOSTARK_API}/armories/characters/{urllib.parse.quote(name)}/profiles"
-    resp = session.get(
-        url,
-        headers={"accept": "application/json", "authorization": f"bearer {api_key}"},
-        timeout=15,
-    )
+    try:
+        resp = session.get(
+            url,
+            headers={"accept": "application/json", "authorization": f"bearer {api_key}"},
+            timeout=15,
+        )
+    except requests.RequestException as e:
+        # 한 캐릭터의 통신 실패로 전체 갱신이 중단되지 않도록 실패 처리만 하고 넘어갑니다.
+        print(f"  [실패] {name}: {type(e).__name__}")
+        return None
     if resp.status_code != 200:
         print(f"  [실패] {name}: HTTP {resp.status_code}")
         return None
