@@ -114,6 +114,32 @@ def extract_json_array(text: str, marker: str) -> list[Any] | None:
     return None
 
 
+# 아크그리드 젬 옵션의 역할 구분. 로펙은 실제 효율 기준이라
+# 캐릭터 역할과 맞지 않는 옵션은 효율 합계에서 빼야 합니다.
+SUPPORT_GEM_OPTIONS = {"낙인력", "아군 공격 강화", "아군 피해 강화"}
+SUPPORT_CLASSES = {"바드", "홀리나이트", "도화가", "발키리"}
+
+
+def is_support_character(ch: dict) -> bool:
+    """프론트 roles.ts와 같은 기준: 수동 지정(role)이 있으면 우선, 없으면 직업으로 추정."""
+    role = ch.get("role")
+    if role == "support":
+        return True
+    if role == "dealer":
+        return False
+    return ch.get("clazz") in SUPPORT_CLASSES
+
+
+def gem_total_for_role(gem_effects: list[dict[str, Any]], support: bool) -> float | None:
+    """역할에 맞는 옵션만 합산합니다. 서폿은 서폿 옵션만, 딜러는 그 외 옵션만 계산합니다."""
+    relevant = [
+        item["effect"]
+        for item in gem_effects
+        if (item["name"] in SUPPORT_GEM_OPTIONS) == support
+    ]
+    return sum(relevant) if relevant else None
+
+
 def parse_lopec_html(html: str) -> dict[str, Any] | None:
     # Next.js 초기 데이터가 JSON 문자열로 한 번 더 감싸져 있어 escape를 풀고 필요한 값만 읽습니다.
     text = html.replace('\\"', '"')
@@ -255,7 +281,12 @@ def main() -> None:
             ch["lopecError"] = "로펙 조회 실패"
         else:
             ch["lopec"] = lopec["lopec"]
-            ch["gemEfficiency"] = lopec["gemEfficiency"]
+            gem = dict(lopec["gemEfficiency"])
+            # 젬 효율 합계는 캐릭터 역할에 맞는 옵션만 계산합니다.
+            # 딜러에게 낙인력 같은 서폿 옵션까지 더하면 로펙 표시값보다 커집니다.
+            total = gem_total_for_role(gem.get("effects", []), is_support_character(ch))
+            gem["total"] = round_number(total)
+            ch["gemEfficiency"] = gem
             ch["lopecUpdatedAt"] = now
             ch["lopecError"] = None
             source_updated = True
