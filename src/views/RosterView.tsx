@@ -25,6 +25,9 @@ const gemEfficiencyTitle = (effects: GemEfficiencyEffect[] = []) => {
 const lopecUrl = (name: string) =>
   `https://lopec.kr/character/specPoint/${encodeURIComponent(name)}`
 
+// 로펙은 브라우저에서 직접 읽을 수 없어(CORS 차단) GitHub Actions로 갱신합니다.
+const LOPEC_WORKFLOW_URL = 'https://github.com/alsjun/minpec/actions/workflows/lopec.yml'
+
 export default function RosterView({ state }: Props) {
   const { sections, update } = state
   const members = memberList(sections.characters)
@@ -301,6 +304,20 @@ export default function RosterView({ state }: Props) {
           title="팀원 모두가 같이 쓰는 로아 API 키를 등록합니다"
         >
           {sharedKey ? 'API 키 변경' : 'API 키 등록 (팀 공유)'}
+        </button>
+        <button
+          onClick={() => {
+            if (
+              confirm(
+                '로펙 점수 갱신 페이지를 열까요?\n열린 페이지에서 Run workflow 버튼을 누르면 2~3분 뒤 자동으로 반영됩니다.',
+              )
+            ) {
+              window.open(LOPEC_WORKFLOW_URL, '_blank')
+            }
+          }}
+          title="로펙 점수·젬 효율을 새로 받아옵니다 (GitHub Actions 실행)"
+        >
+          ⟳ 로펙 점수 갱신
         </button>
         <span className="toolbar-divider" />
         <input

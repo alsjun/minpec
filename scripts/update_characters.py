@@ -237,8 +237,10 @@ def supabase_headers(service_key: str) -> dict:
 
 
 def main() -> None:
+    # --lopec-only: 로아 API는 건너뛰고 로펙 점수·젬 효율만 빠르게 갱신합니다.
+    lopec_only = "--lopec-only" in sys.argv
     load_env_file()
-    api_key = require_env("LOSTARK_API_KEY")
+    api_key = "" if lopec_only else require_env("LOSTARK_API_KEY")
     # REST 주소(.../rest/v1)를 넣어도 동작하도록 base 주소로 정리합니다.
     sb_url = re.sub(r"/rest/v1/?$", "", require_env("SUPABASE_URL").strip().rstrip("/"))
     sb_key = require_env("SUPABASE_SERVICE_ROLE_KEY")
@@ -264,16 +266,17 @@ def main() -> None:
     updated = failed = 0
     for ch in characters:
         source_updated = False
-        profile = fetch_profile(session, api_key, ch["name"])
-        time.sleep(REQUEST_INTERVAL_SEC)
-        if profile is None:
-            failed += 1
-        else:
-            ch["clazz"] = profile.get("CharacterClassName") or ch.get("clazz")
-            ch["itemLevel"] = parse_number(profile.get("ItemAvgLevel")) or ch.get("itemLevel")
-            ch["combatPower"] = parse_number(profile.get("CombatPower")) or ch.get("combatPower")
-            ch["updatedAt"] = now
-            source_updated = True
+        if not lopec_only:
+            profile = fetch_profile(session, api_key, ch["name"])
+            time.sleep(REQUEST_INTERVAL_SEC)
+            if profile is None:
+                failed += 1
+            else:
+                ch["clazz"] = profile.get("CharacterClassName") or ch.get("clazz")
+                ch["itemLevel"] = parse_number(profile.get("ItemAvgLevel")) or ch.get("itemLevel")
+                ch["combatPower"] = parse_number(profile.get("CombatPower")) or ch.get("combatPower")
+                ch["updatedAt"] = now
+                source_updated = True
 
         lopec = fetch_lopec(session, ch["name"])
         time.sleep(LOPEC_REQUEST_INTERVAL_SEC)
