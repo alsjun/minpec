@@ -13,6 +13,7 @@ const SECTION_KEYS: SectionKey[] = [
   'assignments',
   'memberColors',
   'settings',
+  'presets',
 ]
 
 interface Adapter {

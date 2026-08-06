@@ -978,6 +978,16 @@ tbody tr:hover {
   gap: 8px;
 }
 
+.sheet-toolbar select {
+  background: var(--ink-1);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 7px 10px;
+  font-size: 13px;
+  max-width: 180px;
+}
+
 .sheet-toolbar button,
 .source-actions button,
 .source-empty button {

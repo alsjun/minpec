@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from 'react'
-import { SEED_ASSIGNMENTS } from '../seed'
 import { memberColor, memberList } from '../store'
 import { cloneAssignments, cloneParties, normalizeParties, padPartySlots } from '../validation'
 import type { AppState } from '../store'
@@ -13,6 +12,8 @@ export default function SourceSheetView({ state }: Props) {
   const { sections, update } = state
   const [draft, setDraft] = useState<Assignments>(() => cloneAssignments(sections.sourceAssignments))
   const [savedMsg, setSavedMsg] = useState<string | null>(null)
+  const [selectedPreset, setSelectedPreset] = useState('')
+  const presets = sections.presets ?? []
   const members = memberList(sections.characters)
   const colors = sections.memberColors
   const charByName = useMemo(
@@ -110,10 +111,38 @@ export default function SourceSheetView({ state }: Props) {
     })
   }
 
-  const resetToSeed = () => {
-    if (!confirm('원본 시트 편집 내용을 기본값으로 되돌릴까요? 저장 버튼을 눌러야 확정됩니다.')) return
-    setDraft(cloneAssignments(SEED_ASSIGNMENTS))
+  /** 마지막으로 저장했던 원본 시트(가장 최근 프리셋)를 편집본으로 불러옵니다. */
+  const loadPrevious = () => {
+    if (presets.length === 0) {
+      alert('저장된 이전 값이 없습니다. 원본 시트를 저장하면 프리셋으로 쌓입니다.')
+      return
+    }
+    const last = presets[presets.length - 1]
+    if (!confirm(`마지막 저장본 '${last.name}'을 불러올까요? 저장 버튼을 눌러야 확정됩니다.`)) return
+    setDraft(cloneAssignments(last.assignments))
     setSavedMsg(null)
+  }
+
+  const loadPreset = () => {
+    const preset = presets.find((p) => p.savedAt === selectedPreset)
+    if (!preset) {
+      alert('불러올 프리셋을 먼저 선택해 주세요.')
+      return
+    }
+    if (!confirm(`프리셋 '${preset.name}'을 불러올까요? 저장 버튼을 눌러야 확정됩니다.`)) return
+    setDraft(cloneAssignments(preset.assignments))
+    setSavedMsg(null)
+  }
+
+  const deletePreset = () => {
+    const preset = presets.find((p) => p.savedAt === selectedPreset)
+    if (!preset) {
+      alert('삭제할 프리셋을 먼저 선택해 주세요.')
+      return
+    }
+    if (!confirm(`프리셋 '${preset.name}'을 삭제할까요?`)) return
+    update('presets', (cur) => (cur ?? []).filter((p) => p.savedAt !== preset.savedAt))
+    setSelectedPreset('')
   }
 
   const loadCurrentBoard = () => {
@@ -123,8 +152,25 @@ export default function SourceSheetView({ state }: Props) {
   }
 
   const saveSourceSheet = () => {
-    update('sourceAssignments', () => cloneAssignments(draft))
-    setSavedMsg('원본 시트를 저장했습니다.')
+    const defaultName = new Date().toLocaleString('ko-KR', {
+      month: 'numeric',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    })
+    const name = prompt('프리셋 이름을 입력해 주세요.', defaultName)
+    if (name === null) return
+    const snapshot = cloneAssignments(draft)
+    update('sourceAssignments', () => snapshot)
+    // 저장할 때마다 프리셋으로 쌓아 두고, 오래된 것은 20개까지만 유지합니다.
+    update('presets', (cur) => {
+      const next = [
+        ...(cur ?? []),
+        { name: name.trim() || defaultName, savedAt: new Date().toISOString(), assignments: snapshot },
+      ]
+      return next.slice(-20)
+    })
+    setSavedMsg('원본 시트를 저장하고 프리셋으로 남겼습니다.')
     setTimeout(() => setSavedMsg(null), 2500)
   }
 
@@ -140,7 +186,21 @@ export default function SourceSheetView({ state }: Props) {
         <div className="sheet-toolbar-actions">
           {savedMsg && <span className="save-msg">{savedMsg}</span>}
           <button onClick={loadCurrentBoard}>현재 편성 가져오기</button>
-          <button onClick={resetToSeed}>기본값 불러오기</button>
+          <button onClick={loadPrevious}>이전 값 불러오기</button>
+          <select
+            value={selectedPreset}
+            onChange={(e) => setSelectedPreset(e.target.value)}
+            title="저장해 둔 프리셋 목록"
+          >
+            <option value="">프리셋 선택...</option>
+            {[...presets].reverse().map((p) => (
+              <option key={p.savedAt} value={p.savedAt}>
+                {p.name}
+              </option>
+            ))}
+          </select>
+          <button onClick={loadPreset}>불러오기</button>
+          <button onClick={deletePreset}>삭제</button>
           <button className="primary-action" onClick={saveSourceSheet}>원본 시트 저장</button>
         </div>
       </div>

@@ -80,6 +80,13 @@ export interface Settings {
   lostarkApiKey?: string
 }
 
+/** 원본 시트 저장 시 함께 남는 편성 스냅샷. 이전 저장본으로 되돌릴 때 사용합니다. */
+export interface Preset {
+  name: string
+  savedAt: string
+  assignments: Assignments
+}
+
 export interface Sections {
   characters: Character[]
   raids: Raid[]
@@ -90,6 +97,7 @@ export interface Sections {
   assignments: Assignments
   memberColors: MemberColors
   settings: Settings
+  presets: Preset[]
 }
 
 export interface GoldRow {
