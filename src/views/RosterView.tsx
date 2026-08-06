@@ -322,7 +322,7 @@ export default function RosterView({ state }: Props) {
         <span className="toolbar-divider" />
         <input
           list="member-options"
-          placeholder="본부계 (사람)"
+          placeholder="당신의 이름은?"
           value={newMember}
           onChange={(e) => setNewMember(e.target.value)}
         />
