@@ -34,3 +34,4 @@ jobs:
             git commit -m "chore: $(TZ=Asia/Seoul date +%Y-%m-%d) 데이터 백업"
             git push
           fi
+
