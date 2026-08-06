@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { memberColor, memberList } from '../store'
+import PresetDeleteModal from '../components/PresetDeleteModal'
 import { cloneAssignments, cloneParties, normalizeParties, padPartySlots } from '../validation'
 import type { AppState } from '../store'
 import type { Assignments } from '../types'
@@ -13,6 +14,7 @@ export default function SourceSheetView({ state }: Props) {
   const [draft, setDraft] = useState<Assignments>(() => cloneAssignments(sections.sourceAssignments))
   const [savedMsg, setSavedMsg] = useState<string | null>(null)
   const [selectedPreset, setSelectedPreset] = useState('')
+  const [deleteOpen, setDeleteOpen] = useState(false)
   const presets = sections.presets ?? []
   const members = memberList(sections.characters)
   const colors = sections.memberColors
@@ -134,17 +136,6 @@ export default function SourceSheetView({ state }: Props) {
     setSavedMsg(null)
   }
 
-  const deletePreset = () => {
-    const preset = presets.find((p) => p.savedAt === selectedPreset)
-    if (!preset) {
-      alert('삭제할 프리셋을 먼저 선택해 주세요.')
-      return
-    }
-    if (!confirm(`프리셋 '${preset.name}'을 삭제할까요?`)) return
-    update('presets', (cur) => (cur ?? []).filter((p) => p.savedAt !== preset.savedAt))
-    setSelectedPreset('')
-  }
-
   const loadCurrentBoard = () => {
     if (!confirm('현재 편성 보드 내용을 원본 시트 편집본으로 가져올까요? 저장 버튼을 눌러야 확정됩니다.')) return
     setDraft(cloneAssignments(sections.assignments))
@@ -176,6 +167,18 @@ export default function SourceSheetView({ state }: Props) {
 
   return (
     <div className="view source-sheet">
+      {deleteOpen && (
+        <PresetDeleteModal
+          title="원본 시트 프리셋 삭제"
+          presets={presets}
+          onClose={() => setDeleteOpen(false)}
+          onDelete={(savedAts) => {
+            const remove = new Set(savedAts)
+            update('presets', (cur) => (cur ?? []).filter((p) => !remove.has(p.savedAt)))
+            if (remove.has(selectedPreset)) setSelectedPreset('')
+          }}
+        />
+      )}
       <div className="sheet-toolbar">
         <div>
           <h3>원본 레이드표</h3>
@@ -200,7 +203,7 @@ export default function SourceSheetView({ state }: Props) {
             ))}
           </select>
           <button onClick={loadPreset}>불러오기</button>
-          <button onClick={deletePreset}>삭제</button>
+          <button onClick={() => setDeleteOpen(true)}>삭제...</button>
           <button className="primary-action" onClick={saveSourceSheet}>원본 시트 저장</button>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { memberColor, memberList } from '../store'
+import PresetDeleteModal from '../components/PresetDeleteModal'
 import type { AppState } from '../store'
 
 interface Props {
@@ -12,6 +13,7 @@ export default function ChecksView({ state }: Props) {
   const colors = sections.memberColors
   const raids = sections.raids.filter((r) => r.active)
   const [selectedPreset, setSelectedPreset] = useState('')
+  const [deleteOpen, setDeleteOpen] = useState(false)
   const presets = sections.checkPresets ?? []
 
   const savePreset = () => {
@@ -44,17 +46,6 @@ export default function ChecksView({ state }: Props) {
     update('checks', () => JSON.parse(JSON.stringify(preset.checks)))
   }
 
-  const deletePreset = () => {
-    const preset = presets.find((p) => p.savedAt === selectedPreset)
-    if (!preset) {
-      alert('삭제할 프리셋을 먼저 선택해 주세요.')
-      return
-    }
-    if (!confirm(`체크 프리셋 '${preset.name}'을 삭제할까요?`)) return
-    update('checkPresets', (cur) => (cur ?? []).filter((p) => p.savedAt !== preset.savedAt))
-    setSelectedPreset('')
-  }
-
   const clearAll = () => {
     if (!confirm('모든 캐릭터의 레이드 체크를 해제할까요? 되돌리기로 복구할 수 있습니다.')) return
     update('checks', (cur) =>
@@ -71,6 +62,18 @@ export default function ChecksView({ state }: Props) {
 
   return (
     <div className="view">
+      {deleteOpen && (
+        <PresetDeleteModal
+          title="체크 프리셋 삭제"
+          presets={presets}
+          onClose={() => setDeleteOpen(false)}
+          onDelete={(savedAts) => {
+            const remove = new Set(savedAts)
+            update('checkPresets', (cur) => (cur ?? []).filter((p) => !remove.has(p.savedAt)))
+            if (remove.has(selectedPreset)) setSelectedPreset('')
+          }}
+        />
+      )}
       <p className="hint">캐릭터가 이번 주에 갈 레이드를 체크하면, 편성 보드의 후보 목록에 나타납니다.</p>
 
       <div className="roster-toolbar">
@@ -88,7 +91,7 @@ export default function ChecksView({ state }: Props) {
           ))}
         </select>
         <button onClick={loadPreset}>불러오기</button>
-        <button onClick={deletePreset}>삭제</button>
+        <button onClick={() => setDeleteOpen(true)}>삭제...</button>
         <span className="toolbar-divider" />
         <button onClick={clearAll}>전체 체크 해제</button>
       </div>
