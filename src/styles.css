@@ -228,22 +228,8 @@ thead th {
   color: var(--muted);
 }
 
-.checks-table {
-  border-collapse: separate;
-  border-spacing: 0;
-}
-
-.checks-table thead {
-  position: sticky;
-  top: var(--sticky-raid-top);
-  z-index: 60;
-  box-shadow: 0 1px 0 var(--line-soft), 0 10px 14px rgba(14, 17, 22, 0.72);
-}
-
 .checks-table thead th {
-  background: #1c2330;
-  position: relative;
-  z-index: 1;
+  background: var(--ink-2);
 }
 
 tbody tr:hover {
@@ -1272,9 +1258,40 @@ tbody tr:hover {
 
 /* ---------- 클리어 표시 ---------- */
 
-.party-card.cleared,
-.pot-col.cleared {
+.party-card.cleared {
   opacity: 0.5;
+}
+
+/* 대시보드의 클리어된 팟은 명단만 흐리게 두고 버튼은 또렷하게 유지합니다. */
+.pot-col.cleared .pot-col-names,
+.pot-col.cleared .pot-col-status,
+.pot-col.cleared .pot-col-avg {
+  opacity: 0.45;
+}
+
+.pot-clear-btn {
+  display: block;
+  width: calc(100% - 14px);
+  margin: 8px 7px 0;
+  background: none;
+  color: var(--muted);
+  border: 1px dashed var(--line);
+  border-radius: 6px;
+  padding: 4px 0;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.pot-clear-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.pot-clear-btn.active {
+  color: #14110a;
+  background: var(--gold);
+  border: 1px solid var(--gold);
+  font-weight: 700;
 }
 
 .party-card.cleared::before {
@@ -1296,7 +1313,13 @@ tbody tr:hover {
 
 /* ---------- 레이드 체크 표 ---------- */
 
-/* 사람별 표라 세로 스크롤은 필요 없고, 옆으로 밀 때 캐릭터 이름만 왼쪽에 고정합니다. */
+/* 사람별 표라 세로 스크롤은 필요 없고, 옆으로 밀 때 캐릭터 이름만 왼쪽에 고정합니다.
+   Safari에서 collapse 표의 sticky가 깨져서 separate로 둡니다. */
+.checks-table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
 .checks-scroll thead th {
   z-index: 2;
 }
