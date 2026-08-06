@@ -232,6 +232,12 @@ thead th {
   background: var(--ink-2);
 }
 
+/* 체크박스를 누르다 드래그되면 셀 선택 하이라이트가 표가 깨진 것처럼 보여서 막습니다. */
+.checks-table {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 tbody tr:hover {
   background: rgba(217, 181, 106, 0.04);
 }
