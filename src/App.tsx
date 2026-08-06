@@ -51,6 +51,13 @@ export default function App() {
     setTimeout(() => setUndoMsg(null), 2500)
   }
 
+  const handleRedo = async () => {
+    if (!activeTab.undoKey) return
+    const ok = await state.redo(activeTab.undoKey)
+    setUndoMsg(ok ? '앞으로 굴렀습니다.' : '굴러갈 곳이 없습니다.')
+    setTimeout(() => setUndoMsg(null), 2500)
+  }
+
   return (
     <div className="app">
       <header>
@@ -62,23 +69,34 @@ export default function App() {
         <div className="sync-error">동기화 오류: {state.syncError} — 새로고침 후 다시 시도해 주세요.</div>
       )}
 
-      <nav className="tabs">
-        {TABS.map((t) => (
-          <button
-            key={t.id}
-            className={t.id === tab ? 'tab active' : 'tab'}
-            onClick={() => setTab(t.id)}
-          >
-            {t.label}
-          </button>
-        ))}
+      <div className="tabs-row">
+        <nav className="tabs">
+          {TABS.map((t) => (
+            <button
+              key={t.id}
+              className={t.id === tab ? 'tab active' : 'tab'}
+              onClick={() => setTab(t.id)}
+            >
+              {t.label}
+            </button>
+          ))}
+        </nav>
         {activeTab.undoKey && (
-          <button className="undo-btn" onClick={handleUndo} title="이 탭의 마지막 변경을 되돌립니다">
-            ↩ 되돌리기
-          </button>
+          <div className="history-controls">
+            {undoMsg && <span className="undo-msg">{undoMsg}</span>}
+            <button className="undo-btn" onClick={handleUndo} title="이 탭의 마지막 변경을 되돌립니다">
+              ↩ 되돌리기
+            </button>
+            <button
+              className="undo-btn"
+              onClick={handleRedo}
+              title="되돌리기 한 것을 다시 앞으로 진행합니다"
+            >
+              ↪ 앞으로구르기
+            </button>
+          </div>
         )}
-        {undoMsg && <span className="undo-msg">{undoMsg}</span>}
-      </nav>
+      </div>
 
       {!state.ready ? (
         <p className="hint">불러오는 중...</p>

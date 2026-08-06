@@ -163,6 +163,8 @@ export interface AppState {
   syncError: string | null
   update: <K extends SectionKey>(key: K, updater: (cur: Sections[K]) => Sections[K]) => void
   undo: (key: SectionKey) => Promise<boolean>
+  /** 되돌리기 직후 다시 앞으로 진행합니다. 새 변경이 생기면 앞으로 갈 이력은 사라집니다. */
+  redo: (key: SectionKey) => Promise<boolean>
 }
 
 export function useAppState(): AppState {
@@ -170,6 +172,10 @@ export function useAppState(): AppState {
   const [sections, setSections] = useState<Sections>(SEED_SECTIONS)
   const [ready, setReady] = useState(false)
   const [syncError, setSyncError] = useState<string | null>(null)
+  // 되돌리기로 지나온 상태를 담는 앞으로구르기 스택 (브라우저 세션 한정)
+  const redoRef = useRef<Partial<Record<SectionKey, unknown[]>>>({})
+  const sectionsRef = useRef(sections)
+  sectionsRef.current = sections
 
   useEffect(() => {
     const adapter = adapterRef.current
@@ -209,6 +215,8 @@ export function useAppState(): AppState {
 
   const update = useCallback(
     <K extends SectionKey>(key: K, updater: (cur: Sections[K]) => Sections[K]) => {
+      // 손으로 새 변경을 만들면 앞으로 갈 이력은 의미가 없어지므로 비웁니다.
+      redoRef.current[key] = []
       setSections((prev) => {
         const next = updater(prev[key])
         adapterRef.current
@@ -223,9 +231,27 @@ export function useAppState(): AppState {
 
   const undo = useCallback(async (key: SectionKey): Promise<boolean> => {
     try {
+      const before = sectionsRef.current[key]
       const restored = await adapterRef.current.undo(key)
       if (restored === null) return false
+      const stack = (redoRef.current[key] ??= [])
+      stack.push(before)
       setSections((prev) => ({ ...prev, [key]: restored as never }))
+      setSyncError(null)
+      return true
+    } catch (e) {
+      setSyncError((e as Error).message)
+      return false
+    }
+  }, [])
+
+  const redo = useCallback(async (key: SectionKey): Promise<boolean> => {
+    const stack = redoRef.current[key]
+    if (!stack || stack.length === 0) return false
+    const next = stack.pop()
+    try {
+      await adapterRef.current.save(key, next, sectionsRef.current[key])
+      setSections((prev) => ({ ...prev, [key]: next as never }))
       setSyncError(null)
       return true
     } catch (e) {
@@ -242,6 +268,7 @@ export function useAppState(): AppState {
     syncError,
     update,
     undo,
+    redo,
   }
 }
 
