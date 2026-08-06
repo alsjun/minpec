@@ -1,0 +1,36 @@
+# 매일 KST 새벽 5시 30분에 전체 데이터를 backups/ 폴더로 내려받아 커밋합니다.
+# 데이터가 망가지면 git 이력에서 원하는 날짜의 JSON을 꺼내 복구할 수 있습니다.
+name: 데이터 백업
+
+on:
+  schedule:
+    - cron: '30 20 * * *' # UTC 20:30 = KST 05:30
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r scripts/requirements.txt
+      - run: python scripts/backup.py
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      - name: 변경이 있으면 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add backups/
+          if git diff --cached --quiet; then
+            echo "변경 없음 — 커밋 생략"
+          else
+            git commit -m "chore: $(TZ=Asia/Seoul date +%Y-%m-%d) 데이터 백업"
+            git push
+          fi
