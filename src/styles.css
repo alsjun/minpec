@@ -1296,12 +1296,7 @@ tbody tr:hover {
 
 /* ---------- 레이드 체크 표 ---------- */
 
-/* 표 안에서만 스크롤되게 해서, 헤더는 위에·캐릭터 이름은 왼쪽에 항상 고정합니다. */
-.checks-scroll {
-  max-height: calc(100vh - 230px);
-  overflow: auto;
-}
-
+/* 사람별 표라 세로 스크롤은 필요 없고, 옆으로 밀 때 캐릭터 이름만 왼쪽에 고정합니다. */
 .checks-scroll thead th {
   z-index: 2;
 }

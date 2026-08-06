@@ -21,41 +21,54 @@ export default function ChecksView({ state }: Props) {
   return (
     <div className="view">
       <p className="hint">캐릭터가 이번 주에 갈 레이드를 체크하면, 편성 보드의 후보 목록에 나타납니다.</p>
-      <div className="table-scroll checks-scroll">
-        <table className="checks-table">
-          <thead>
-            <tr>
-              <th>캐릭터</th>
-              <th className="num">아이템 레벨</th>
-              {raids.map((r) => (
-                <th key={r.id} title={r.name}>{r.id}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {sections.characters.map((c) => (
-              <tr key={c.name}>
-                <td className="char-name">
-                  <span className="member-dot" style={{ background: memberColor(c.member, members, colors) }} />
-                  {c.name}
-                </td>
-                <td className="num">
-                  {c.itemLevel?.toLocaleString('ko-KR', { maximumFractionDigits: 2 }) ?? '-'}
-                </td>
-                {raids.map((r) => (
-                  <td key={r.id} className="check-cell">
-                    <input
-                      type="checkbox"
-                      checked={sections.checks[c.name]?.[r.id] ?? false}
-                      onChange={() => toggle(c.name, r.id)}
-                    />
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      {members.map((member) => {
+        const chars = sections.characters.filter((c) => c.member === member)
+        const color = memberColor(member, members, colors)
+        return (
+          <section key={member} className="member-section">
+            <h3>
+              <span className="member-dot" style={{ background: color }} />
+              {member}
+              <span className="member-count">{chars.length}캐릭</span>
+            </h3>
+            <div className="table-scroll checks-scroll">
+              <table className="checks-table">
+                <thead>
+                  <tr>
+                    <th>캐릭터</th>
+                    <th className="num">아이템 레벨</th>
+                    {raids.map((r) => (
+                      <th key={r.id} title={r.name}>{r.id}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {chars.map((c) => (
+                    <tr key={c.name}>
+                      <td className="char-name">
+                        <span className="member-dot" style={{ background: color }} />
+                        {c.name}
+                      </td>
+                      <td className="num">
+                        {c.itemLevel?.toLocaleString('ko-KR', { maximumFractionDigits: 2 }) ?? '-'}
+                      </td>
+                      {raids.map((r) => (
+                        <td key={r.id} className="check-cell">
+                          <input
+                            type="checkbox"
+                            checked={sections.checks[c.name]?.[r.id] ?? false}
+                            onChange={() => toggle(c.name, r.id)}
+                          />
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        )
+      })}
     </div>
   )
 }
