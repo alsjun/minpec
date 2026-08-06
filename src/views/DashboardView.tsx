@@ -3,7 +3,6 @@ import { memberColor, memberList } from '../store'
 import { isSupportChar } from '../roles'
 import {
   SUBPARTY_SIZE,
-  arrangeAssignmentsByRules,
   chunk,
   normalizeParties,
   padPartySlots,
@@ -76,10 +75,19 @@ export default function DashboardView({ state, onOpenBoard }: Props) {
   })
   const totalGold = memberRows.reduce((a, r) => a + r.gold, 0)
 
+  // 원본 시트의 팟 구성을 재배치 없이 그대로 편성 보드로 가져옵니다.
   const resetFromSourceSheet = () => {
-    if (!confirm('현재 편성 보드를 저장된 원본 시트 기준으로 다시 짤까요?')) return
+    if (!confirm('편성 보드를 원본 시트 편성 그대로 덮어쓸까요?')) return
     update('assignments', () =>
-      arrangeAssignmentsByRules(sections.sourceAssignments, sections.raids, sections.characters),
+      Object.fromEntries(
+        sections.raids.map((raid) => [
+          raid.id,
+          normalizeParties(sections.sourceAssignments[raid.id]).map((p) => ({
+            ...padPartySlots(p, raid.partySize),
+            done: true,
+          })),
+        ]),
+      ),
     )
   }
 
@@ -152,7 +160,7 @@ export default function DashboardView({ state, onOpenBoard }: Props) {
 
       <div className="dash-section-head">
         <h3>전체 편성표</h3>
-        <button onClick={resetFromSourceSheet}>원본 시트로 다시 짜기</button>
+        <button onClick={resetFromSourceSheet}>원본 시트 그대로 불러오기</button>
       </div>
       <div className="raid-blocks">
         {raidRows.map((row) => (
