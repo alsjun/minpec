@@ -1,0 +1,3726 @@
+[
+ {
+  "key": "characters",
+  "data": [
+   {
+    "code": "건1",
+    "name": "아마도시커먼",
+    "clazz": "건슬링어",
+    "lopec": {
+     "delta": 906.58,
+     "median": 6277.31,
+     "bestScore": 7183.89,
+     "currentScore": 7183.89
+    },
+    "member": "건아",
+    "account": "건아",
+    "itemLevel": 1781.66,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 7517.75,
+    "gemEfficiency": {
+     "total": 9.82,
+     "median": 9.54,
+     "effects": [
+      {
+       "name": "공격력",
+       "level": 48,
+       "effect": 1.76
+      },
+      {
+       "name": "낙인력",
+       "level": 11,
+       "effect": 1.83
+      },
+      {
+       "name": "추가 피해",
+       "level": 41,
+       "effect": 3.31
+      },
+      {
+       "name": "보스 피해",
+       "level": 57,
+       "effect": 4.75
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 18,
+       "effect": 0.94
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 4,
+       "effect": 0.52
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "건2",
+    "name": "기무유느기",
+    "clazz": "데빌헌터",
+    "lopec": {
+     "delta": -1356.53,
+     "median": 4432.53,
+     "bestScore": 4632.7,
+     "currentScore": 3076.0
+    },
+    "member": "건아",
+    "account": "건아",
+    "itemLevel": 1756.66,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 3204.87,
+    "gemEfficiency": {
+     "total": 4.44,
+     "median": 5.81,
+     "effects": [
+      {
+       "name": "추가 피해",
+       "level": 33,
+       "effect": 2.66
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 32,
+       "effect": 1.68
+      },
+      {
+       "name": "공격력",
+       "level": 35,
+       "effect": 1.28
+      },
+      {
+       "name": "낙인력",
+       "level": 29,
+       "effect": 4.83
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 10,
+       "effect": 1.3
+      },
+      {
+       "name": "보스 피해",
+       "level": 6,
+       "effect": 0.5
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "건3",
+    "name": "0뀬땬쨩",
+    "clazz": "기상술사",
+    "lopec": {
+     "delta": -2087.2,
+     "median": 4159.86,
+     "bestScore": 4225.19,
+     "currentScore": 2072.66
+    },
+    "member": "건아",
+    "account": "건아",
+    "itemLevel": 1750.83,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 2623.4,
+    "gemEfficiency": {
+     "total": 5.4,
+     "median": 5.27,
+     "effects": [
+      {
+       "name": "추가 피해",
+       "level": 41,
+       "effect": 3.31
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 26,
+       "effect": 1.36
+      },
+      {
+       "name": "보스 피해",
+       "level": 8,
+       "effect": 0.66
+      },
+      {
+       "name": "공격력",
+       "level": 39,
+       "effect": 1.43
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 6,
+       "effect": 0.78
+      },
+      {
+       "name": "낙인력",
+       "level": 23,
+       "effect": 3.83
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "건4",
+    "name": "아포가토시커먼",
+    "clazz": "환수사",
+    "lopec": {
+     "delta": -907.85,
+     "median": 3279.05,
+     "bestScore": 3686.16,
+     "currentScore": 2371.2
+    },
+    "member": "건아",
+    "account": "건아",
+    "itemLevel": 1730.83,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 2374.45,
+    "gemEfficiency": {
+     "total": 2.55,
+     "median": 4.34,
+     "effects": [
+      {
+       "name": "추가 피해",
+       "level": 18,
+       "effect": 1.45
+      },
+      {
+       "name": "공격력",
+       "level": 30,
+       "effect": 1.1
+      },
+      {
+       "name": "낙인력",
+       "level": 22,
+       "effect": 3.66
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 14,
+       "effect": 0.73
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "건5",
+    "name": "아무래도시커먼",
+    "clazz": "가디언나이트",
+    "lopec": {
+     "delta": -1975.18,
+     "median": 3526.47,
+     "bestScore": 3586.73,
+     "currentScore": 1551.29
+    },
+    "member": "건아",
+    "account": "건아",
+    "itemLevel": 1737.5,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 1952.33,
+    "gemEfficiency": {
+     "total": 4.85,
+     "median": 4.72,
+     "effects": [
+      {
+       "name": "낙인력",
+       "level": 28,
+       "effect": 4.66
+      },
+      {
+       "name": "공격력",
+       "level": 26,
+       "effect": 0.95
+      },
+      {
+       "name": "추가 피해",
+       "level": 35,
+       "effect": 2.82
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 21,
+       "effect": 1.1
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 9,
+       "effect": 1.17
+      },
+      {
+       "name": "보스 피해",
+       "level": 13,
+       "effect": 1.08
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "건6",
+    "name": "그냥시커먼",
+    "clazz": "도화가",
+    "lopec": {
+     "delta": -1839.18,
+     "median": 3279.05,
+     "bestScore": 1439.87,
+     "currentScore": 1439.87
+    },
+    "member": "건아",
+    "account": "건아",
+    "itemLevel": 1730.0,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 1532.9,
+    "gemEfficiency": {
+     "total": 8.99,
+     "median": 4.34,
+     "effects": [
+      {
+       "name": "공격력",
+       "level": 28,
+       "effect": 1.02
+      },
+      {
+       "name": "추가 피해",
+       "level": 36,
+       "effect": 2.91
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 31,
+       "effect": 1.62
+      },
+      {
+       "name": "낙인력",
+       "level": 38,
+       "effect": 6.33
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 8,
+       "effect": 1.04
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "민1",
+    "name": "0군단장",
+    "clazz": "기상술사",
+    "lopec": {
+     "delta": 335.9,
+     "median": 6277.31,
+     "bestScore": 6888.71,
+     "currentScore": 6613.21
+    },
+    "member": "민준",
+    "account": "민준",
+    "itemLevel": 1781.66,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 7041.44,
+    "gemEfficiency": {
+     "total": 8.59,
+     "median": 9.54,
+     "effects": [
+      {
+       "name": "공격력",
+       "level": 74,
+       "effect": 2.71
+      },
+      {
+       "name": "추가 피해",
+       "level": 44,
+       "effect": 3.55
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 18,
+       "effect": 0.94
+      },
+      {
+       "name": "낙인력",
+       "level": 12,
+       "effect": 2.0
+      },
+      {
+       "name": "보스 피해",
+       "level": 28,
+       "effect": 2.33
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "민2",
+    "name": "F4ide",
+    "clazz": "블레이드",
+    "lopec": {
+     "delta": -115.86,
+     "median": 4608.13,
+     "bestScore": 4492.27,
+     "currentScore": 4492.27
+    },
+    "member": "민준",
+    "account": "민준",
+    "itemLevel": 1761.66,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 4526.64,
+    "gemEfficiency": {
+     "total": 5.39,
+     "median": 6.27,
+     "effects": [
+      {
+       "name": "아군 피해 강화",
+       "level": 36,
+       "effect": 1.89
+      },
+      {
+       "name": "공격력",
+       "level": 54,
+       "effect": 1.98
+      },
+      {
+       "name": "추가 피해",
+       "level": 32,
+       "effect": 2.58
+      },
+      {
+       "name": "보스 피해",
+       "level": 10,
+       "effect": 0.83
+      },
+      {
+       "name": "낙인력",
+       "level": 16,
+       "effect": 2.66
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 7,
+       "effect": 0.91
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "민3",
+    "name": "4XOy",
+    "clazz": "차원술사",
+    "lopec": {
+     "delta": 466.59,
+     "median": 4159.86,
+     "bestScore": 4626.45,
+     "currentScore": 4626.45
+    },
+    "member": "민준",
+    "account": "민준",
+    "itemLevel": 1750.83,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 4729.71,
+    "gemEfficiency": {
+     "total": 5.38,
+     "median": 5.27,
+     "effects": [
+      {
+       "name": "추가 피해",
+       "level": 10,
+       "effect": 0.8
+      },
+      {
+       "name": "공격력",
+       "level": 41,
+       "effect": 1.5
+      },
+      {
+       "name": "낙인력",
+       "level": 5,
+       "effect": 0.83
+      },
+      {
+       "name": "보스 피해",
+       "level": 37,
+       "effect": 3.08
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 18,
+       "effect": 0.94
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 9,
+       "effect": 1.17
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "영1",
+    "name": "자몽초",
+    "role": "support",
+    "clazz": "발키리",
+    "lopec": {
+     "delta": 818.79,
+     "median": 5430.16,
+     "bestScore": 6248.95,
+     "currentScore": 6248.95
+    },
+    "member": "영찬",
+    "account": "영찬",
+    "itemLevel": 1775.0,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 5697.76,
+    "gemEfficiency": {
+     "total": 16.77,
+     "median": 1.81,
+     "effects": [
+      {
+       "name": "아군 피해 강화",
+       "level": 59,
+       "effect": 3.09
+      },
+      {
+       "name": "낙인력",
+       "level": 54,
+       "effect": 9.0
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 36,
+       "effect": 4.68
+      },
+      {
+       "name": "공격력",
+       "level": 5,
+       "effect": 0.18
+      },
+      {
+       "name": "추가 피해",
+       "level": 10,
+       "effect": 0.8
+      },
+      {
+       "name": "보스 피해",
+       "level": 7,
+       "effect": 0.58
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "영2",
+    "name": "유자초",
+    "clazz": "발키리",
+    "lopec": {
+     "delta": -1476.18,
+     "median": 3826.34,
+     "bestScore": 3825.28,
+     "currentScore": 2350.16
+    },
+    "member": "영찬",
+    "account": "영찬",
+    "itemLevel": 1750.0,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 1656.28,
+    "gemEfficiency": {
+     "total": 10.31,
+     "median": 1.15,
+     "effects": [
+      {
+       "name": "아군 피해 강화",
+       "level": 25,
+       "effect": 1.31
+      },
+      {
+       "name": "낙인력",
+       "level": 54,
+       "effect": 9.0
+      },
+      {
+       "name": "추가 피해",
+       "level": 21,
+       "effect": 1.69
+      },
+      {
+       "name": "공격력",
+       "level": 39,
+       "effect": 1.43
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "영3",
+    "name": "자몽맛크로앙쥬",
+    "clazz": "슬레이어",
+    "lopec": {
+     "delta": -174.69,
+     "median": 2758.43,
+     "bestScore": 3287.52,
+     "currentScore": 2583.74
+    },
+    "member": "영찬",
+    "account": "영찬",
+    "itemLevel": 1721.66,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 2639.64,
+    "gemEfficiency": {
+     "total": 5.17,
+     "median": 3.5,
+     "effects": [
+      {
+       "name": "공격력",
+       "level": 40,
+       "effect": 1.46
+      },
+      {
+       "name": "추가 피해",
+       "level": 46,
+       "effect": 3.71
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 30,
+       "effect": 1.57
+      },
+      {
+       "name": "낙인력",
+       "level": 31,
+       "effect": 5.16
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "예1",
+    "name": "가치",
+    "clazz": "바드",
+    "lopec": {
+     "delta": 798.0,
+     "median": 5430.16,
+     "bestScore": 6228.16,
+     "currentScore": 6228.16
+    },
+    "member": "예진",
+    "account": "예진",
+    "itemLevel": 1778.33,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 6216.99,
+    "gemEfficiency": {
+     "total": 13.5,
+     "median": 1.81,
+     "effects": [
+      {
+       "name": "아군 피해 강화",
+       "level": 63,
+       "effect": 3.3
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 40,
+       "effect": 5.2
+      },
+      {
+       "name": "낙인력",
+       "level": 30,
+       "effect": 5.0
+      },
+      {
+       "name": "추가 피해",
+       "level": 5,
+       "effect": 0.4
+      },
+      {
+       "name": "보스 피해",
+       "level": 6,
+       "effect": 0.5
+      },
+      {
+       "name": "공격력",
+       "level": 14,
+       "effect": 0.51
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "예2",
+    "name": "도토리인형",
+    "clazz": "인파이터",
+    "lopec": {
+     "delta": -261.05,
+     "median": 5161.31,
+     "bestScore": 5032.32,
+     "currentScore": 4900.26
+    },
+    "member": "예진",
+    "account": "예진",
+    "itemLevel": 1772.5,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 5161.94,
+    "gemEfficiency": {
+     "total": 4.96,
+     "median": 7.1,
+     "effects": [
+      {
+       "name": "낙인력",
+       "level": 17,
+       "effect": 2.83
+      },
+      {
+       "name": "공격력",
+       "level": 44,
+       "effect": 1.61
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 39,
+       "effect": 2.04
+      },
+      {
+       "name": "추가 피해",
+       "level": 23,
+       "effect": 1.85
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 13,
+       "effect": 1.69
+      },
+      {
+       "name": "보스 피해",
+       "level": 18,
+       "effect": 1.5
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "예3",
+    "name": "민주원",
+    "clazz": "소서리스",
+    "lopec": {
+     "delta": 258.24,
+     "median": 4432.53,
+     "bestScore": 4690.77,
+     "currentScore": 4690.77
+    },
+    "member": "예진",
+    "account": "예진",
+    "itemLevel": 1755.83,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 4577.68,
+    "gemEfficiency": {
+     "total": 4.13,
+     "median": 5.81,
+     "effects": [
+      {
+       "name": "아군 공격 강화",
+       "level": 15,
+       "effect": 1.95
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 37,
+       "effect": 1.94
+      },
+      {
+       "name": "공격력",
+       "level": 44,
+       "effect": 1.61
+      },
+      {
+       "name": "낙인력",
+       "level": 22,
+       "effect": 3.66
+      },
+      {
+       "name": "추가 피해",
+       "level": 25,
+       "effect": 2.02
+      },
+      {
+       "name": "보스 피해",
+       "level": 6,
+       "effect": 0.5
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "예4",
+    "name": "도토리정원",
+    "clazz": "발키리",
+    "lopec": {
+     "delta": -135.13,
+     "median": 3826.34,
+     "bestScore": 4021.83,
+     "currentScore": 3691.21
+    },
+    "member": "예진",
+    "account": "예진",
+    "itemLevel": 1750.0,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 3491.7,
+    "gemEfficiency": {
+     "total": 7.67,
+     "median": 1.15,
+     "effects": [
+      {
+       "name": "낙인력",
+       "level": 31,
+       "effect": 5.16
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 43,
+       "effect": 2.25
+      },
+      {
+       "name": "공격력",
+       "level": 26,
+       "effect": 0.95
+      },
+      {
+       "name": "추가 피해",
+       "level": 19,
+       "effect": 1.53
+      },
+      {
+       "name": "보스 피해",
+       "level": 10,
+       "effect": 0.83
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 2,
+       "effect": 0.26
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "예5",
+    "name": "때굴때굴도토리",
+    "clazz": "워로드",
+    "lopec": {
+     "delta": 15.24,
+     "median": 3526.47,
+     "bestScore": 3541.71,
+     "currentScore": 3541.71
+    },
+    "member": "예진",
+    "account": "예진",
+    "itemLevel": 1736.66,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 3458.26,
+    "gemEfficiency": {
+     "total": 4.18,
+     "median": 4.72,
+     "effects": [
+      {
+       "name": "낙인력",
+       "level": 33,
+       "effect": 5.5
+      },
+      {
+       "name": "공격력",
+       "level": 30,
+       "effect": 1.1
+      },
+      {
+       "name": "추가 피해",
+       "level": 30,
+       "effect": 2.42
+      },
+      {
+       "name": "보스 피해",
+       "level": 8,
+       "effect": 0.66
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 15,
+       "effect": 0.78
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 2,
+       "effect": 0.26
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "예6",
+    "name": "타닥도토리",
+    "clazz": "홀리나이트",
+    "lopec": {
+     "delta": -200.68,
+     "median": 3826.34,
+     "bestScore": 3640.41,
+     "currentScore": 3625.66
+    },
+    "member": "예진",
+    "account": "예진",
+    "itemLevel": 1750.0,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 3541.84,
+    "gemEfficiency": {
+     "total": 8.06,
+     "median": 1.15,
+     "effects": [
+      {
+       "name": "아군 피해 강화",
+       "level": 43,
+       "effect": 2.25
+      },
+      {
+       "name": "공격력",
+       "level": 32,
+       "effect": 1.17
+      },
+      {
+       "name": "낙인력",
+       "level": 31,
+       "effect": 5.16
+      },
+      {
+       "name": "추가 피해",
+       "level": 20,
+       "effect": 1.61
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 5,
+       "effect": 0.65
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "예7",
+    "name": "밤옴뇸뇽",
+    "clazz": "기상술사",
+    "lopec": {
+     "delta": -290.56,
+     "median": 3652.98,
+     "bestScore": 3362.42,
+     "currentScore": 3362.42
+    },
+    "member": "예진2",
+    "account": "예진",
+    "itemLevel": 1740.83,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 3360.67,
+    "gemEfficiency": {
+     "total": 4.64,
+     "median": 4.88,
+     "effects": [
+      {
+       "name": "공격력",
+       "level": 40,
+       "effect": 1.46
+      },
+      {
+       "name": "추가 피해",
+       "level": 27,
+       "effect": 2.18
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 14,
+       "effect": 0.73
+      },
+      {
+       "name": "낙인력",
+       "level": 19,
+       "effect": 3.16
+      },
+      {
+       "name": "보스 피해",
+       "level": 12,
+       "effect": 1.0
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "예8",
+    "name": "감자옴뇸뇽",
+    "clazz": "슬레이어",
+    "lopec": {
+     "delta": -331.6,
+     "median": 3526.47,
+     "bestScore": 3194.87,
+     "currentScore": 3194.87
+    },
+    "member": "예진2",
+    "account": "예진",
+    "itemLevel": 1737.5,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 3221.01,
+    "gemEfficiency": {
+     "total": 3.87,
+     "median": 4.72,
+     "effects": [
+      {
+       "name": "아군 피해 강화",
+       "level": 28,
+       "effect": 1.47
+      },
+      {
+       "name": "낙인력",
+       "level": 32,
+       "effect": 5.33
+      },
+      {
+       "name": "공격력",
+       "level": 37,
+       "effect": 1.35
+      },
+      {
+       "name": "추가 피해",
+       "level": 25,
+       "effect": 2.02
+      },
+      {
+       "name": "보스 피해",
+       "level": 6,
+       "effect": 0.5
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 9,
+       "effect": 1.17
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "예9",
+    "name": "옥수수옴뇸뇽",
+    "clazz": "도화가",
+    "lopec": {
+     "delta": -153.14,
+     "median": 2589.87,
+     "bestScore": 2436.73,
+     "currentScore": 2436.73
+    },
+    "member": "예진2",
+    "account": "예진",
+    "itemLevel": 1720.83,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 2421.58,
+    "gemEfficiency": {
+     "total": 6.48,
+     "median": 0.79,
+     "effects": [
+      {
+       "name": "아군 피해 강화",
+       "level": 46,
+       "effect": 2.41
+      },
+      {
+       "name": "추가 피해",
+       "level": 18,
+       "effect": 1.45
+      },
+      {
+       "name": "낙인력",
+       "level": 19,
+       "effect": 3.16
+      },
+      {
+       "name": "공격력",
+       "level": 23,
+       "effect": 0.84
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 7,
+       "effect": 0.91
+      },
+      {
+       "name": "보스 피해",
+       "level": 4,
+       "effect": 0.33
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "용1",
+    "name": "나우보리",
+    "clazz": "브레이커",
+    "lopec": {
+     "delta": 771.71,
+     "median": 5642.79,
+     "bestScore": 6414.5,
+     "currentScore": 6414.5
+    },
+    "member": "용주",
+    "account": "용주",
+    "itemLevel": 1778.33,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 6701.92,
+    "gemEfficiency": {
+     "total": 8.71,
+     "median": 8.37,
+     "effects": [
+      {
+       "name": "보스 피해",
+       "level": 46,
+       "effect": 3.83
+      },
+      {
+       "name": "공격력",
+       "level": 45,
+       "effect": 1.65
+      },
+      {
+       "name": "낙인력",
+       "level": 2,
+       "effect": 0.33
+      },
+      {
+       "name": "추가 피해",
+       "level": 40,
+       "effect": 3.23
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 31,
+       "effect": 1.62
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 11,
+       "effect": 1.43
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "용2",
+    "name": "이솔보리",
+    "clazz": "인파이터",
+    "lopec": {
+     "delta": 58.13,
+     "median": 4159.86,
+     "bestScore": 4217.99,
+     "currentScore": 4217.99
+    },
+    "member": "용주",
+    "account": "용주",
+    "itemLevel": 1752.5,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 4244.45,
+    "gemEfficiency": {
+     "total": 5.21,
+     "median": 5.27,
+     "effects": [
+      {
+       "name": "추가 피해",
+       "level": 42,
+       "effect": 3.39
+      },
+      {
+       "name": "낙인력",
+       "level": 9,
+       "effect": 1.5
+      },
+      {
+       "name": "공격력",
+       "level": 36,
+       "effect": 1.32
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 2,
+       "effect": 0.26
+      },
+      {
+       "name": "보스 피해",
+       "level": 6,
+       "effect": 0.5
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 49,
+       "effect": 2.57
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "용3",
+    "name": "이솔화련",
+    "clazz": "가디언나이트",
+    "lopec": {
+     "delta": -147.72,
+     "median": 4159.86,
+     "bestScore": 4012.14,
+     "currentScore": 4012.14
+    },
+    "member": "용주",
+    "account": "용주",
+    "itemLevel": 1750.83,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 4080.12,
+    "gemEfficiency": {
+     "total": 4.05,
+     "median": 5.27,
+     "effects": [
+      {
+       "name": "공격력",
+       "level": 38,
+       "effect": 1.39
+      },
+      {
+       "name": "낙인력",
+       "level": 41,
+       "effect": 6.83
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 37,
+       "effect": 1.94
+      },
+      {
+       "name": "추가 피해",
+       "level": 33,
+       "effect": 2.66
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "용4",
+    "name": "장봉삼",
+    "role": "support",
+    "clazz": "홀리나이트",
+    "lopec": {
+     "delta": -161.73,
+     "median": 1130.79,
+     "bestScore": 969.06,
+     "currentScore": 969.06
+    },
+    "member": "용주",
+    "account": "용주",
+    "itemLevel": 1661.16,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 1041.32,
+    "gemEfficiency": {
+     "total": null,
+     "median": 0.0,
+     "effects": []
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "용5",
+    "name": "당연아",
+    "role": "dealer",
+    "clazz": "배틀마스터",
+    "lopec": {
+     "delta": 74.46,
+     "median": 0.0,
+     "bestScore": 74.46,
+     "currentScore": 74.46
+    },
+    "member": "용주",
+    "account": "용주",
+    "itemLevel": 1589.16,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 3287,
+    "gemEfficiency": {
+     "total": null,
+     "median": null,
+     "effects": []
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "용6",
+    "name": "이솔나린",
+    "clazz": "환수사",
+    "lopec": {
+     "delta": 84.97,
+     "median": 3279.05,
+     "bestScore": 3364.02,
+     "currentScore": 3364.02
+    },
+    "member": "용주",
+    "account": "용주",
+    "itemLevel": 1734.16,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 3426.76,
+    "gemEfficiency": {
+     "total": 3.9,
+     "median": 4.34,
+     "effects": [
+      {
+       "name": "추가 피해",
+       "level": 34,
+       "effect": 2.74
+      },
+      {
+       "name": "낙인력",
+       "level": 35,
+       "effect": 5.83
+      },
+      {
+       "name": "공격력",
+       "level": 25,
+       "effect": 0.91
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 2,
+       "effect": 0.26
+      },
+      {
+       "name": "보스 피해",
+       "level": 3,
+       "effect": 0.25
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 28,
+       "effect": 1.47
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "원1",
+    "name": "레에멜",
+    "clazz": "창술사",
+    "lopec": {
+     "delta": -39.82,
+     "median": 7598.94,
+     "bestScore": 7559.12,
+     "currentScore": 7559.12
+    },
+    "member": "원규",
+    "account": "원규",
+    "itemLevel": 1795.0,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 8007.99,
+    "gemEfficiency": {
+     "total": 10.87,
+     "median": 12.47,
+     "effects": [
+      {
+       "name": "추가 피해",
+       "level": 54,
+       "effect": 4.36
+      },
+      {
+       "name": "공격력",
+       "level": 48,
+       "effect": 1.76
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 12,
+       "effect": 0.63
+      },
+      {
+       "name": "보스 피해",
+       "level": 57,
+       "effect": 4.75
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 15,
+       "effect": 1.95
+      },
+      {
+       "name": "낙인력",
+       "level": 1,
+       "effect": 0.16
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "원2",
+    "name": "그때의워붕이",
+    "clazz": "워로드",
+    "lopec": {
+     "delta": -40.49,
+     "median": 5161.31,
+     "bestScore": 5120.82,
+     "currentScore": 5120.82
+    },
+    "member": "원규",
+    "account": "원규",
+    "itemLevel": 1770.0,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 5091.44,
+    "gemEfficiency": {
+     "total": 5.35,
+     "median": 7.1,
+     "effects": [
+      {
+       "name": "공격력",
+       "level": 25,
+       "effect": 0.91
+      },
+      {
+       "name": "추가 피해",
+       "level": 55,
+       "effect": 4.44
+      },
+      {
+       "name": "낙인력",
+       "level": 18,
+       "effect": 3.0
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 30,
+       "effect": 1.57
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "원3",
+    "name": "화현석",
+    "clazz": "가디언나이트",
+    "lopec": {
+     "delta": 222.19,
+     "median": 3526.47,
+     "bestScore": 3748.66,
+     "currentScore": 3748.66
+    },
+    "member": "원규",
+    "account": "원규",
+    "itemLevel": 1735.83,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 3881.66,
+    "gemEfficiency": {
+     "total": 4.84,
+     "median": 4.72,
+     "effects": [
+      {
+       "name": "아군 피해 강화",
+       "level": 32,
+       "effect": 1.68
+      },
+      {
+       "name": "공격력",
+       "level": 44,
+       "effect": 1.61
+      },
+      {
+       "name": "추가 피해",
+       "level": 40,
+       "effect": 3.23
+      },
+      {
+       "name": "낙인력",
+       "level": 26,
+       "effect": 4.33
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 3,
+       "effect": 0.39
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "원4",
+    "name": "작서현",
+    "clazz": "블레이드",
+    "lopec": {
+     "delta": 154.78,
+     "median": 3652.98,
+     "bestScore": 3807.76,
+     "currentScore": 3807.76
+    },
+    "member": "원규",
+    "account": "원규",
+    "itemLevel": 1740.83,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 3855.81,
+    "gemEfficiency": {
+     "total": 4.25,
+     "median": 4.88,
+     "effects": [
+      {
+       "name": "아군 피해 강화",
+       "level": 25,
+       "effect": 1.31
+      },
+      {
+       "name": "추가 피해",
+       "level": 40,
+       "effect": 3.23
+      },
+      {
+       "name": "공격력",
+       "level": 28,
+       "effect": 1.02
+      },
+      {
+       "name": "낙인력",
+       "level": 17,
+       "effect": 2.83
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "원5",
+    "name": "주겜탈",
+    "clazz": "버서커",
+    "lopec": {
+     "delta": -150.61,
+     "median": 3526.47,
+     "bestScore": 3375.86,
+     "currentScore": 3375.86
+    },
+    "member": "원규",
+    "account": "원규",
+    "itemLevel": 1735.0,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 3451.96,
+    "gemEfficiency": {
+     "total": 4.14,
+     "median": 4.72,
+     "effects": [
+      {
+       "name": "아군 피해 강화",
+       "level": 35,
+       "effect": 1.83
+      },
+      {
+       "name": "추가 피해",
+       "level": 40,
+       "effect": 3.23
+      },
+      {
+       "name": "공격력",
+       "level": 25,
+       "effect": 0.91
+      },
+      {
+       "name": "낙인력",
+       "level": 31,
+       "effect": 5.16
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "원6",
+    "name": "나작현",
+    "clazz": "서머너",
+    "lopec": {
+     "delta": 263.11,
+     "median": 3279.05,
+     "bestScore": 3542.16,
+     "currentScore": 3542.16
+    },
+    "member": "원규",
+    "account": "원규",
+    "itemLevel": 1734.16,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 3521.79,
+    "gemEfficiency": {
+     "total": 5.64,
+     "median": 4.34,
+     "effects": [
+      {
+       "name": "추가 피해",
+       "level": 48,
+       "effect": 3.88
+      },
+      {
+       "name": "공격력",
+       "level": 48,
+       "effect": 1.76
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 16,
+       "effect": 0.84
+      },
+      {
+       "name": "낙인력",
+       "level": 13,
+       "effect": 2.16
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "유1",
+    "name": "핑크보라돼지",
+    "clazz": "배틀마스터",
+    "lopec": {
+     "delta": 286.57,
+     "median": 6808.53,
+     "bestScore": 7095.1,
+     "currentScore": 7095.1
+    },
+    "member": "유한",
+    "account": "유한",
+    "itemLevel": 1785.83,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 7505.15,
+    "gemEfficiency": {
+     "total": 9.91,
+     "median": 10.86,
+     "effects": [
+      {
+       "name": "보스 피해",
+       "level": 56,
+       "effect": 4.66
+      },
+      {
+       "name": "공격력",
+       "level": 64,
+       "effect": 2.34
+      },
+      {
+       "name": "추가 피해",
+       "level": 36,
+       "effect": 2.91
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 9,
+       "effect": 1.17
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 7,
+       "effect": 0.36
+      },
+      {
+       "name": "낙인력",
+       "level": 10,
+       "effect": 1.66
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "유2",
+    "name": "히힛산군발싸",
+    "clazz": "스트라이커",
+    "lopec": {
+     "delta": 330.0,
+     "median": 4608.13,
+     "bestScore": 4938.13,
+     "currentScore": 4938.13
+    },
+    "member": "유한",
+    "account": "유한",
+    "itemLevel": 1761.66,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 4998.93,
+    "gemEfficiency": {
+     "total": 4.91,
+     "median": 6.27,
+     "effects": [
+      {
+       "name": "공격력",
+       "level": 39,
+       "effect": 1.43
+      },
+      {
+       "name": "추가 피해",
+       "level": 40,
+       "effect": 3.23
+      },
+      {
+       "name": "낙인력",
+       "level": 21,
+       "effect": 3.5
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 28,
+       "effect": 1.47
+      },
+      {
+       "name": "보스 피해",
+       "level": 3,
+       "effect": 0.25
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "유3",
+    "name": "히힛도심발싸",
+    "clazz": "아르카나",
+    "lopec": {
+     "delta": 559.8,
+     "median": 4159.86,
+     "bestScore": 4719.66,
+     "currentScore": 4719.66
+    },
+    "member": "유한",
+    "account": "유한",
+    "itemLevel": 1754.16,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 4897.07,
+    "gemEfficiency": {
+     "total": 4.26,
+     "median": 5.27,
+     "effects": [
+      {
+       "name": "낙인력",
+       "level": 17,
+       "effect": 2.83
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 39,
+       "effect": 2.04
+      },
+      {
+       "name": "공격력",
+       "level": 28,
+       "effect": 1.02
+      },
+      {
+       "name": "추가 피해",
+       "level": 33,
+       "effect": 2.66
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 2,
+       "effect": 0.26
+      },
+      {
+       "name": "보스 피해",
+       "level": 7,
+       "effect": 0.58
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "유4",
+    "name": "히힛솔라빔발싸",
+    "clazz": "기상술사",
+    "lopec": {
+     "delta": 124.0,
+     "median": 4159.86,
+     "bestScore": 4283.86,
+     "currentScore": 4283.86
+    },
+    "member": "유한",
+    "account": "유한",
+    "itemLevel": 1750.0,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 4464.05,
+    "gemEfficiency": {
+     "total": 4.31,
+     "median": 5.27,
+     "effects": [
+      {
+       "name": "추가 피해",
+       "level": 36,
+       "effect": 2.91
+      },
+      {
+       "name": "공격력",
+       "level": 27,
+       "effect": 0.99
+      },
+      {
+       "name": "낙인력",
+       "level": 29,
+       "effect": 4.83
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 28,
+       "effect": 1.47
+      },
+      {
+       "name": "보스 피해",
+       "level": 5,
+       "effect": 0.41
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 4,
+       "effect": 0.52
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "유5",
+    "name": "히힛내공발싸",
+    "clazz": "기공사",
+    "lopec": {
+     "delta": 401.74,
+     "median": 3279.05,
+     "bestScore": 3680.79,
+     "currentScore": 3680.79
+    },
+    "member": "유한",
+    "account": "유한",
+    "itemLevel": 1731.66,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 3717.55,
+    "gemEfficiency": {
+     "total": 4.25,
+     "median": 4.34,
+     "effects": [
+      {
+       "name": "아군 피해 강화",
+       "level": 26,
+       "effect": 1.36
+      },
+      {
+       "name": "낙인력",
+       "level": 22,
+       "effect": 3.66
+      },
+      {
+       "name": "공격력",
+       "level": 34,
+       "effect": 1.24
+      },
+      {
+       "name": "아군 공격 강화",
+       "level": 5,
+       "effect": 0.65
+      },
+      {
+       "name": "보스 피해",
+       "level": 11,
+       "effect": 0.91
+      },
+      {
+       "name": "추가 피해",
+       "level": 26,
+       "effect": 2.1
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "유6",
+    "name": "히힛용숨발싸",
+    "clazz": "가디언나이트",
+    "lopec": {
+     "delta": -86.24,
+     "median": 3279.05,
+     "bestScore": 3281.7,
+     "currentScore": 3192.81
+    },
+    "member": "유한",
+    "account": "유한",
+    "itemLevel": 1730.83,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 3287.74,
+    "gemEfficiency": {
+     "total": 6.23,
+     "median": 4.34,
+     "effects": [
+      {
+       "name": "공격력",
+       "level": 49,
+       "effect": 1.79
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 20,
+       "effect": 1.05
+      },
+      {
+       "name": "추가 피해",
+       "level": 55,
+       "effect": 4.44
+      },
+      {
+       "name": "낙인력",
+       "level": 14,
+       "effect": 2.33
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "은1",
+    "name": "타니쟈",
+    "clazz": "가디언나이트",
+    "lopec": {
+     "delta": 223.34,
+     "median": 4159.86,
+     "bestScore": 4383.2,
+     "currentScore": 4383.2
+    },
+    "member": "은수",
+    "account": "은수",
+    "itemLevel": 1751.66,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 4295.17,
+    "gemEfficiency": {
+     "total": 7.03,
+     "median": 5.27,
+     "effects": [
+      {
+       "name": "추가 피해",
+       "level": 51,
+       "effect": 4.12
+      },
+      {
+       "name": "공격력",
+       "level": 50,
+       "effect": 1.83
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 31,
+       "effect": 1.62
+      },
+      {
+       "name": "낙인력",
+       "level": 22,
+       "effect": 3.66
+      },
+      {
+       "name": "보스 피해",
+       "level": 13,
+       "effect": 1.08
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   },
+   {
+    "code": "은2",
+    "name": "레린카",
+    "clazz": "서머너",
+    "lopec": {
+     "delta": -13.72,
+     "median": 2758.43,
+     "bestScore": 2779.95,
+     "currentScore": 2744.71
+    },
+    "member": "은수",
+    "account": "은수",
+    "itemLevel": 1720.0,
+    "updatedAt": "2026-08-12T20:51:31.411845+00:00",
+    "lopecError": null,
+    "combatPower": 2675.45,
+    "gemEfficiency": {
+     "total": 1.4,
+     "median": 3.5,
+     "effects": [
+      {
+       "name": "공격력",
+       "level": 23,
+       "effect": 0.84
+      },
+      {
+       "name": "아군 피해 강화",
+       "level": 12,
+       "effect": 0.63
+      },
+      {
+       "name": "추가 피해",
+       "level": 7,
+       "effect": 0.56
+      },
+      {
+       "name": "낙인력",
+       "level": 4,
+       "effect": 0.66
+      }
+     ]
+    },
+    "lopecUpdatedAt": "2026-08-12T20:51:31.411845+00:00"
+   }
+  ],
+  "updated_at": "2026-08-12T20:51:31.411845+00:00"
+ },
+ {
+  "key": "memberColors",
+  "data": {},
+  "updated_at": "2026-08-06T08:49:54.939+00:00"
+ },
+ {
+  "key": "raids",
+  "data": [
+   {
+    "id": "나르딘",
+    "name": "벨가르딘 나이트메어",
+    "active": true,
+    "partySize": 8
+   },
+   {
+    "id": "하르딘",
+    "name": "벨가르딘 하드",
+    "active": true,
+    "partySize": 8
+   },
+   {
+    "id": "노르딘",
+    "name": "벨가르딘 노말",
+    "active": true,
+    "partySize": 8
+   },
+   {
+    "id": "종막",
+    "name": "카제로스 종막",
+    "active": true,
+    "partySize": 8
+   },
+   {
+    "id": "4막",
+    "name": "카제로스 4막",
+    "active": true,
+    "partySize": 8
+   },
+   {
+    "id": "나르카",
+    "name": "세르카 나이트메어",
+    "active": true,
+    "partySize": 4
+   },
+   {
+    "id": "하르카",
+    "name": "세르카 하드",
+    "active": true,
+    "partySize": 4
+   },
+   {
+    "id": "3성당",
+    "name": "성심당 3단계",
+    "active": true,
+    "partySize": 4
+   },
+   {
+    "id": "2성당",
+    "name": "성심당 2단계",
+    "active": true,
+    "partySize": 4
+   }
+  ],
+  "updated_at": "2026-08-06T08:06:34.186+00:00"
+ },
+ {
+  "key": "checks",
+  "data": {
+   "4XOy": {
+    "4막": false,
+    "종막": true,
+    "2성당": false,
+    "3성당": true,
+    "나르딘": false,
+    "나르카": true,
+    "노르딘": true,
+    "하르딘": false,
+    "하르카": false
+   },
+   "F4ide": {
+    "4막": false,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": true,
+    "노르딘": true,
+    "하르딘": false,
+    "하르카": false
+   },
+   "가치": {
+    "종막": true,
+    "3성당": true,
+    "나르카": true,
+    "하르딘": true
+   },
+   "+가치": {
+    "4막": false,
+    "종막": true,
+    "2성당": false,
+    "3성당": true,
+    "나르딘": false,
+    "나르카": true,
+    "노르딘": false,
+    "하르딘": true,
+    "하르카": false
+   },
+   "나작현": {
+    "4막": false,
+    "종막": false,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": false
+   },
+   "당연아": {
+    "4막": true,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": true
+   },
+   "레린카": {
+    "4막": true,
+    "종막": false,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": false
+   },
+   "레에멜": {
+    "4막": false,
+    "종막": false,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": true,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": true,
+    "하르카": false
+   },
+   "민주원": {
+    "4막": false,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": true,
+    "노르딘": true,
+    "하르딘": false,
+    "하르카": false
+   },
+   "유자초": {
+    "종막": true,
+    "노르딘": true,
+    "하르딘": false,
+    "하르카": true
+   },
+   "자몽초": {
+    "종막": true,
+    "나르카": true,
+    "하르딘": true
+   },
+   "작서현": {
+    "4막": false,
+    "종막": false,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": false
+   },
+   "장봉삼": {
+    "4막": true,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": true
+   },
+   "주겜탈": {
+    "4막": false,
+    "종막": false,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": false
+   },
+   "타니쟈": {
+    "4막": false,
+    "종막": true,
+    "2성당": false,
+    "3성당": true,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": true,
+    "하르딘": false,
+    "하르카": true
+   },
+   "화현석": {
+    "4막": false,
+    "종막": false,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": false
+   },
+   "히솔발": {
+    "4막": true,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": true
+   },
+   "+유자초": {
+    "4막": false,
+    "종막": false,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": false
+   },
+   "+자몽초": {
+    "4막": false,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": true,
+    "노르딘": false,
+    "하르딘": true,
+    "하르카": false
+   },
+   "0군단장": {
+    "4막": false,
+    "종막": true,
+    "2성당": false,
+    "3성당": true,
+    "나르딘": false,
+    "나르카": true,
+    "노르딘": false,
+    "하르딘": true,
+    "하르카": false
+   },
+   "0뀬땬쨩": {
+    "4막": false,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": true,
+    "하르딘": false,
+    "하르카": false
+   },
+   "나우보리": {
+    "4막": false,
+    "종막": true,
+    "2성당": false,
+    "3성당": true,
+    "나르딘": false,
+    "나르카": true,
+    "노르딘": false,
+    "하르딘": true,
+    "하르카": false
+   },
+   "밤옴뇸뇽": {
+    "4막": true,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": true
+   },
+   "이솔나린": {
+    "4막": true,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": true
+   },
+   "이솔보리": {
+    "4막": false,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": true,
+    "노르딘": true,
+    "하르딘": false,
+    "하르카": false
+   },
+   "이솔화련": {
+    "4막": false,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": true,
+    "하르딘": false,
+    "하르카": true
+   },
+   "감자옴뇸뇽": {
+    "4막": true,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": true
+   },
+   "그냥시커먼": {
+    "4막": true,
+    "종막": true,
+    "하르카": true
+   },
+   "기무유느기": {
+    "4막": false,
+    "종막": true,
+    "2성당": false,
+    "3성당": true,
+    "나르딘": false,
+    "나르카": true,
+    "노르딘": true,
+    "하르딘": false,
+    "하르카": false
+   },
+   "도토리인형": {
+    "4막": false,
+    "종막": false,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": true,
+    "노르딘": false,
+    "하르딘": true,
+    "하르카": false
+   },
+   "도토리정원": {
+    "4막": true,
+    "종막": true,
+    "3성당": false,
+    "나르카": true,
+    "노르딘": true,
+    "하르딘": false,
+    "하르카": false
+   },
+   "타닥도토리": {
+    "4막": true,
+    "종막": true,
+    "2성당": true,
+    "노르딘": false,
+    "하르카": true
+   },
+   "+그냥시커먼": {
+    "4막": true,
+    "종막": true,
+    "2성당": true,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": true
+   },
+   "+도토리정원": {
+    "4막": false,
+    "종막": false,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": true,
+    "노르딘": true,
+    "하르딘": false,
+    "하르카": false
+   },
+   "+타닥도토리": {
+    "4막": true,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": true
+   },
+   "그때의워붕이": {
+    "4막": false,
+    "종막": false,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": true,
+    "하르카": false
+   },
+   "아마도시커먼": {
+    "4막": false,
+    "종막": true,
+    "2성당": false,
+    "3성당": true,
+    "나르딘": false,
+    "나르카": true,
+    "노르딘": false,
+    "하르딘": true,
+    "하르카": false
+   },
+   "옥수수옴뇸뇽": {
+    "4막": true
+   },
+   "핑크보라돼지": {
+    "4막": false,
+    "종막": true,
+    "2성당": false,
+    "3성당": true,
+    "나르딘": false,
+    "나르카": true,
+    "노르딘": false,
+    "하르딘": true,
+    "하르카": false
+   },
+   "히힛내공발싸": {
+    "4막": true,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": true
+   },
+   "히힛도심발싸": {
+    "4막": false,
+    "종막": false,
+    "2성당": false,
+    "3성당": true,
+    "나르딘": false,
+    "나르카": true,
+    "노르딘": true,
+    "하르딘": false,
+    "하르카": false
+   },
+   "히힛산군발싸": {
+    "4막": false,
+    "종막": false,
+    "2성당": false,
+    "3성당": true,
+    "나르딘": false,
+    "나르카": true,
+    "노르딘": true,
+    "하르딘": false,
+    "하르카": false
+   },
+   "히힛용숨발싸": {
+    "4막": true,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": true
+   },
+   "+옥수수옴뇸뇽": {
+    "4막": true,
+    "종막": false,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": false
+   },
+   "때굴때굴도토리": {
+    "4막": true,
+    "종막": true,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": true
+   },
+   "아무래도시커먼": {
+    "4막": true,
+    "종막": true,
+    "2성당": true,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": true
+   },
+   "아포가토시커먼": {
+    "4막": true,
+    "종막": true,
+    "2성당": true,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": true
+   },
+   "자몽맛크로앙쥬": {
+    "4막": false,
+    "종막": false,
+    "2성당": false,
+    "3성당": false,
+    "나르딘": false,
+    "나르카": false,
+    "노르딘": false,
+    "하르딘": false,
+    "하르카": false
+   },
+   "히힛솔라빔발싸": {
+    "4막": true,
+    "종막": true,
+    "하르카": true
+   }
+  },
+  "updated_at": "2026-08-11T03:42:01.393+00:00"
+ },
+ {
+  "key": "settings",
+  "data": {
+   "lostarkApiKey": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IktYMk40TkRDSTJ5NTA5NWpjTWk5TllqY2lyZyIsImtpZCI6IktYMk40TkRDSTJ5NTA5NWpjTWk5TllqY2lyZyJ9.eyJpc3MiOiJodHRwczovL2x1ZHkuZ2FtZS5vbnN0b3ZlLmNvbSIsImF1ZCI6Imh0dHBzOi8vbHVkeS5nYW1lLm9uc3RvdmUuY29tL3Jlc291cmNlcyIsImNsaWVudF9pZCI6IjEwMDAwMDAwMDAwMjk0ODYifQ.Ihh1iQE3JMvHDI3zO2cGj4q3bbJRfvUlJlA96UwvefmtELE9XZfuQPPPTKjYdMRMn--iCWif_wM10O9YEFfOnUvOdByz5_lA06Moe_aQvldsEvx29by567PTzNcWQwKMpmIIjy8WtGU97KMbDkLNbkax47N6SpgDHolUYGbiE-3ecD7b4VbAgTWj-k1SErWPtRx3eUM4hXXQQZsvEHR93b_a8Nkc6D36aqnvEDDZj9vks3s-O3aD6HLlYzXGGMhcLpTmWxTKlXJ0lTQxXItGY-OQlkN5PRKJn-w8fGnmsgJcVL5UJm53W2PKsQJaVAzTmYuQ8RY-ExW2WFfkVKoVUg"
+  },
+  "updated_at": "2026-08-06T08:24:59.383735+00:00"
+ },
+ {
+  "key": "assignments",
+  "data": {
+   "4막": [
+    {
+     "done": true,
+     "slots": [
+      "당연아",
+      "히힛솔라빔발싸",
+      "아포가토시커먼",
+      "타닥도토리",
+      "레린카",
+      null,
+      null,
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "때굴때굴도토리",
+      "히힛내공발싸",
+      "장봉삼",
+      null,
+      "그냥시커먼",
+      null,
+      null,
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "아무래도시커먼",
+      "히힛용숨발싸",
+      "이솔나린",
+      "옥수수옴뇸뇽",
+      null,
+      null,
+      null,
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "밤옴뇸뇽",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "감자옴뇸뇽",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "cleared": false
+    }
+   ],
+   "종막": [
+    {
+     "done": true,
+     "slots": [
+      null,
+      "핑크보라돼지",
+      "이솔나린",
+      "아무래도시커먼",
+      "감자옴뇸뇽",
+      null,
+      null,
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      null,
+      "F4ide",
+      "이솔화련",
+      null,
+      "아포가토시커먼",
+      "타니쟈",
+      null,
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "타닥도토리",
+      "히힛내공발싸",
+      "4XOy",
+      null,
+      "기무유느기",
+      "나우보리",
+      null,
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "그냥시커먼",
+      "당연아",
+      "밤옴뇸뇽",
+      "히힛솔라빔발싸",
+      "0군단장",
+      null,
+      null,
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      null,
+      "장봉삼",
+      null,
+      null,
+      "때굴때굴도토리",
+      "히힛용숨발싸",
+      null,
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      null,
+      "민주원",
+      "이솔보리",
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "slots": [
+      "유자초",
+      "아마도시커먼",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "2성당": [],
+   "3성당": [
+    {
+     "done": true,
+     "slots": [
+      "가치",
+      "핑크보라돼지",
+      "기무유느기",
+      "4XOy"
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "0군단장",
+      "히힛산군발싸",
+      "타니쟈",
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "아마도시커먼",
+      "나우보리",
+      "히힛도심발싸",
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "cleared": false
+    }
+   ],
+   "나르딘": [
+    {
+     "done": true,
+     "slots": [
+      "레에멜",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "cleared": false
+    }
+   ],
+   "나르카": [
+    {
+     "done": true,
+     "slots": [
+      "자몽초",
+      "히힛산군발싸",
+      "F4ide",
+      "민주원"
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "가치",
+      "0군단장",
+      "기무유느기",
+      "이솔보리"
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "아마도시커먼",
+      "도토리정원",
+      "히힛도심발싸",
+      "4XOy"
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "나우보리",
+      "도토리인형",
+      "핑크보라돼지",
+      null
+     ],
+     "cleared": false
+    }
+   ],
+   "노르딘": [
+    {
+     "done": true,
+     "slots": [
+      "도토리정원",
+      "히힛산군발싸",
+      "이솔보리",
+      "0뀬땬쨩",
+      "F4ide",
+      "타니쟈",
+      null,
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "히힛도심발싸",
+      "민주원",
+      "4XOy",
+      null,
+      "기무유느기",
+      "이솔화련",
+      null,
+      null
+     ],
+     "cleared": false
+    }
+   ],
+   "하르딘": [
+    {
+     "done": false,
+     "slots": [
+      "가치",
+      "레에멜",
+      "나우보리",
+      "핑크보라돼지",
+      null,
+      "0군단장",
+      "아마도시커먼",
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "도토리인형",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "cleared": true
+    }
+   ],
+   "하르카": [
+    {
+     "done": true,
+     "slots": [
+      "그냥시커먼",
+      "이솔나린",
+      "히힛용숨발싸",
+      "때굴때굴도토리"
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "타니쟈",
+      "장봉삼",
+      null,
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "당연아",
+      "히힛솔라빔발싸",
+      "아무래도시커먼",
+      "타닥도토리"
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "히힛내공발싸",
+      "아포가토시커먼",
+      "밤옴뇸뇽",
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      "이솔화련",
+      "감자옴뇸뇽",
+      null,
+      null
+     ],
+     "cleared": false
+    },
+    {
+     "done": true,
+     "slots": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "cleared": false
+    }
+   ]
+  },
+  "updated_at": "2026-08-11T03:43:01.902+00:00"
+ },
+ {
+  "key": "presets",
+  "data": [
+   {
+    "name": "06",
+    "savedAt": "2026-08-06T09:46:49.185Z",
+    "assignments": {
+     "4막": [
+      {
+       "done": true,
+       "slots": [
+        "당연아",
+        "히힛솔라빔발싸",
+        "아포가토시커먼",
+        "타닥도토리",
+        "레린카",
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "때굴때굴도토리",
+        "히힛내공발싸",
+        "장봉삼",
+        null,
+        "그냥시커먼",
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "아무래도시커먼",
+        "히힛용숨발싸",
+        "이솔나린",
+        "옥수수옴뇸뇽",
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "밤옴뇸뇽",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "감자옴뇸뇽",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ]
+      }
+     ],
+     "종막": [
+      {
+       "done": true,
+       "slots": [
+        "자몽초",
+        "핑크보라돼지",
+        "이솔나린",
+        "아무래도시커먼",
+        "감자옴뇸뇽",
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "가치",
+        "F4ide",
+        "이솔화련",
+        null,
+        "아포가토시커먼",
+        "타니쟈",
+        null,
+        null
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "타닥도토리",
+        "히힛내공발싸",
+        "4XOy",
+        null,
+        "기무유느기",
+        "나우보리",
+        null,
+        null
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "그냥시커먼",
+        "당연아",
+        "밤옴뇸뇽",
+        "히힛솔라빔발싸",
+        "0군단장",
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "아마도시커먼",
+        "장봉삼",
+        null,
+        null,
+        "때굴때굴도토리",
+        "히힛용숨발싸",
+        null,
+        null
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "0뀬땬쨩",
+        "민주원",
+        "이솔보리",
+        null,
+        null,
+        null,
+        null,
+        null
+       ]
+      }
+     ],
+     "2성당": [],
+     "3성당": [
+      {
+       "done": true,
+       "slots": [
+        "가치",
+        "핑크보라돼지",
+        "기무유느기",
+        "4XOy"
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "0군단장",
+        "히힛산군발싸",
+        "타니쟈",
+        null
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "아마도시커먼",
+        "나우보리",
+        "히힛도심발싸",
+        null
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        null,
+        null,
+        null,
+        null
+       ]
+      }
+     ],
+     "나르딘": [
+      {
+       "done": true,
+       "slots": [
+        "레에멜",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ],
+       "cleared": true
+      }
+     ],
+     "나르카": [
+      {
+       "done": true,
+       "slots": [
+        "자몽초",
+        "히힛산군발싸",
+        "F4ide",
+        "민주원"
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "가치",
+        "0군단장",
+        "기무유느기",
+        "이솔보리"
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "아마도시커먼",
+        "도토리정원",
+        "히힛도심발싸",
+        "4XOy"
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "나우보리",
+        "도토리인형",
+        "핑크보라돼지",
+        null
+       ]
+      }
+     ],
+     "노르딘": [
+      {
+       "done": true,
+       "slots": [
+        "도토리정원",
+        "히힛산군발싸",
+        "이솔보리",
+        "0뀬땬쨩",
+        "F4ide",
+        "타니쟈",
+        null,
+        null
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "히힛도심발싸",
+        "민주원",
+        "4XOy",
+        null,
+        "기무유느기",
+        "이솔화련",
+        null,
+        null
+       ]
+      }
+     ],
+     "하르딘": [
+      {
+       "done": true,
+       "slots": [
+        "가치",
+        "그때의워붕이",
+        "나우보리",
+        "핑크보라돼지",
+        "자몽초",
+        "0군단장",
+        "아마도시커먼",
+        null
+       ],
+       "cleared": true
+      },
+      {
+       "done": true,
+       "slots": [
+        "도토리인형",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+       ]
+      }
+     ],
+     "하르카": [
+      {
+       "done": true,
+       "slots": [
+        "그냥시커먼",
+        "이솔나린",
+        "히힛용숨발싸",
+        "때굴때굴도토리"
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "타니쟈",
+        "장봉삼",
+        null,
+        null
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "당연아",
+        "히힛솔라빔발싸",
+        "아무래도시커먼",
+        "타닥도토리"
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "히힛내공발싸",
+        "아포가토시커먼",
+        "밤옴뇸뇽",
+        null
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        "이솔화련",
+        "감자옴뇸뇽",
+        null,
+        null
+       ]
+      },
+      {
+       "done": true,
+       "slots": [
+        null,
+        null,
+        null,
+        null
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "updated_at": "2026-08-06T09:46:50.423+00:00"
+ },
+ {
+  "key": "sourceAssignments",
+  "data": {
+   "4막": [
+    {
+     "done": true,
+     "slots": [
+      "당연아",
+      "히힛솔라빔발싸",
+      "아포가토시커먼",
+      "타닥도토리",
+      "레린카",
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "때굴때굴도토리",
+      "히힛내공발싸",
+      "장봉삼",
+      null,
+      "그냥시커먼",
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "아무래도시커먼",
+      "히힛용숨발싸",
+      "이솔나린",
+      "옥수수옴뇸뇽",
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "밤옴뇸뇽",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "감자옴뇸뇽",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "종막": [
+    {
+     "done": true,
+     "slots": [
+      "자몽초",
+      "핑크보라돼지",
+      "이솔나린",
+      "아무래도시커먼",
+      "감자옴뇸뇽",
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "가치",
+      "F4ide",
+      "이솔화련",
+      null,
+      "아포가토시커먼",
+      "타니쟈",
+      null,
+      null
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "타닥도토리",
+      "히힛내공발싸",
+      "4XOy",
+      null,
+      "기무유느기",
+      "나우보리",
+      null,
+      null
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "그냥시커먼",
+      "당연아",
+      "밤옴뇸뇽",
+      "히힛솔라빔발싸",
+      "0군단장",
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "아마도시커먼",
+      "장봉삼",
+      null,
+      null,
+      "때굴때굴도토리",
+      "히힛용숨발싸",
+      null,
+      null
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "0뀬땬쨩",
+      "민주원",
+      "이솔보리",
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "2성당": [],
+   "3성당": [
+    {
+     "done": true,
+     "slots": [
+      "가치",
+      "핑크보라돼지",
+      "기무유느기",
+      "4XOy"
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "0군단장",
+      "히힛산군발싸",
+      "타니쟈",
+      null
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "아마도시커먼",
+      "나우보리",
+      "히힛도심발싸",
+      null
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "나르딘": [
+    {
+     "done": true,
+     "slots": [
+      "레에멜",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "cleared": true
+    }
+   ],
+   "나르카": [
+    {
+     "done": true,
+     "slots": [
+      "자몽초",
+      "히힛산군발싸",
+      "F4ide",
+      "민주원"
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "가치",
+      "0군단장",
+      "기무유느기",
+      "이솔보리"
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "아마도시커먼",
+      "도토리정원",
+      "히힛도심발싸",
+      "4XOy"
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "나우보리",
+      "도토리인형",
+      "핑크보라돼지",
+      null
+     ]
+    }
+   ],
+   "노르딘": [
+    {
+     "done": true,
+     "slots": [
+      "도토리정원",
+      "히힛산군발싸",
+      "이솔보리",
+      "0뀬땬쨩",
+      "F4ide",
+      "타니쟈",
+      null,
+      null
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "히힛도심발싸",
+      "민주원",
+      "4XOy",
+      null,
+      "기무유느기",
+      "이솔화련",
+      null,
+      null
+     ]
+    }
+   ],
+   "하르딘": [
+    {
+     "done": true,
+     "slots": [
+      "가치",
+      "그때의워붕이",
+      "나우보리",
+      "핑크보라돼지",
+      "자몽초",
+      "0군단장",
+      "아마도시커먼",
+      null
+     ],
+     "cleared": true
+    },
+    {
+     "done": true,
+     "slots": [
+      "도토리인형",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "하르카": [
+    {
+     "done": true,
+     "slots": [
+      "그냥시커먼",
+      "이솔나린",
+      "히힛용숨발싸",
+      "때굴때굴도토리"
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "타니쟈",
+      "장봉삼",
+      null,
+      null
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "당연아",
+      "히힛솔라빔발싸",
+      "아무래도시커먼",
+      "타닥도토리"
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "히힛내공발싸",
+      "아포가토시커먼",
+      "밤옴뇸뇽",
+      null
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      "이솔화련",
+      "감자옴뇸뇽",
+      null,
+      null
+     ]
+    },
+    {
+     "done": true,
+     "slots": [
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ]
+  },
+  "updated_at": "2026-08-06T09:46:50.424+00:00"
+ }
+]
